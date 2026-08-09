@@ -6,15 +6,15 @@ This console is like no other console. The PRISM Hybrid Vision is a hybrid digit
 
 ## Key Features
 
-    • Hybrid analog paths
-    • Digital recall
-    • Motorized faders
-    • Modular Cards
-    • Switchable preamp color and style
-    • 2 Compressors per channel
-    • MADI Networking
-    • Touchscreen control
-    • Expandable architecture
+* Hybrid analog paths
+* Digital recall
+* Motorized faders
+* Modular Cards
+* Switchable preamp color and style
+* 2 Compressors per channel
+* MADI Networking
+* Touchscreen control
+* Expandable architecture
 
 ## General Specifications
 
