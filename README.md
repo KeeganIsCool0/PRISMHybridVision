@@ -18,18 +18,18 @@ This console is like no other console. The PRISM Hybrid Vision is a hybrid digit
 
 ## General Specifications
 
-48 Input cahnnels
-48 Mic preamps
-48 Line Inputs
-16 Stereo Returns
-16 AUX Sends
-8 Sub-Groups
-Stereo + Monitor Outputs
-44.1-192 kHz Sample Rates
-48-24 Bit Depth
-MADI Digital Routing Interface
-Full Recall
-100 mm motorized faders per channel
+* 48 Input cahnnels
+- 48 Mic preamps
+* 48 Line Inputs
+- 16 Stereo Returns
+* 16 AUX Sends
+- 8 Sub-Groups
+* Stereo + Monitor Outputs
+- 44.1-192 kHz Sample Rates
+* 48-24 Bit Depth
+- MADI Digital Routing Interface
+* Full Recall
+- 100 mm motorized faders per channel
 
 ## Channel Model
 <img width="595" height="841" alt="image" src="https://github.com/user-attachments/assets/79c7f222-74c7-4211-ae90-7f256c7b518e" />
