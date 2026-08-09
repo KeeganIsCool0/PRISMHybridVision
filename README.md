@@ -47,3 +47,9 @@
 - [ ] Finish
 - [ ] Partnerships
 - [ ] Manufacturing & Production
+
+## Development
+
+To get schematics and other development info please fill the contact form @ https://tally.so/r/wzlvW8
+
+Thank you for being interested in this project!
