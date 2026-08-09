@@ -47,7 +47,3 @@
 - [ ] Finish
 - [ ] Partnerships
 - [ ] Manufacturing & Production
-
-| █░░░░░░░░░░░░░░░░░░░░ 9.09% Complete |
-
-
