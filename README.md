@@ -34,3 +34,7 @@ This console is like no other console. The PRISM Hybrid Vision is a hybrid digit
 ## Channel Model
 <img width="595" height="841" alt="image" src="https://github.com/user-attachments/assets/79c7f222-74c7-4211-ae90-7f256c7b518e" />
 
+## Progress
+
+[x] Scematics
+
