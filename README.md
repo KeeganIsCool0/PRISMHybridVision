@@ -36,5 +36,5 @@ This console is like no other console. The PRISM Hybrid Vision is a hybrid digit
 
 ## Progress
 
-[x] Scematics
+- [x] Scematics
 
