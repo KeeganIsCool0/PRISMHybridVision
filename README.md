@@ -36,5 +36,18 @@ This console is like no other console. The PRISM Hybrid Vision is a hybrid digit
 
 ## Progress
 
-- [x] Scematics
+- [x] Schematics
+- [ ] Documentation
+- [ ] Prototype 1A
+- [ ] Sponsorships
+- [ ] Prototype 1B
+- [ ] Fabrication
+- [ ] Testing
+- [ ] Revising
+- [ ] Finish
+- [ ] Partnerships
+- [ ] Manufacturing & Production
+
+<progress value="25" max="100"></progress> 25%
+
 
