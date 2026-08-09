@@ -48,6 +48,6 @@ This console is like no other console. The PRISM Hybrid Vision is a hybrid digit
 - [ ] Partnerships
 - [ ] Manufacturing & Production
 
-<progress value="25" max="100"></progress> 25%
+<progress value="25" max="100"></progress> 
 
 
