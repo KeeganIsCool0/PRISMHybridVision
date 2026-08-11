@@ -34,6 +34,11 @@
 ## Channel Model
 <img width="595" height="841" alt="image" src="https://github.com/user-attachments/assets/79c7f222-74c7-4211-ae90-7f256c7b518e" />
 
+## Center Console
+
+<img width="1240" height="772" alt="image" src="https://github.com/user-attachments/assets/26712e4a-191a-48d1-bb43-06089ded5b41" />
+
+
 ## Progress
 
 - [x] Schematics
