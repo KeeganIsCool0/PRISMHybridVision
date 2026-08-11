@@ -38,9 +38,8 @@
 
 - [x] Schematics
 - [ ] Documentation
-- [ ] Prototype 1A
 - [ ] Sponsorships
-- [ ] Prototype 1B
+- [ ] Prototype 1A
 - [ ] Fabrication
 - [ ] Testing
 - [ ] Revising
