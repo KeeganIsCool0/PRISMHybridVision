@@ -58,3 +58,11 @@
 To get schematics and other development info please fill the contact form @ https://tally.so/r/wzlvW8
 
 Thank you for being interested in this project!
+
+## Credits
+
+This project would not be possible without SSL, Neve, and API. Thank you for giving me the inspiration for this project.
+
+## Sponsors
+
+None!
