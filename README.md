@@ -42,7 +42,7 @@
 ## Progress
 
 - [x] Schematics
-- [ ] Documentation
+- [x] Documentation
 - [ ] Sponsorships
 - [ ] Prototype 1A
 - [ ] Fabrication
