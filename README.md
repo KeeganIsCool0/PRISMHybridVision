@@ -42,6 +42,7 @@
 ## Progress
 
 - [x] Schematics
+- [x] CAD Files
 - [x] Documentation
 - [ ] Sponsorships
 - [ ] Prototype 1A
