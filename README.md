@@ -65,4 +65,6 @@ This project would not be possible without SSL, Neve, and API. Thank you for giv
 
 ## Sponsors
 
+You can click the "Sponsor" button or go to the GoFundMe here: https://gofund.me/b56c8fe3b 
+
 None!
