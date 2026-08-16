@@ -1,6 +1,6 @@
 # PRISMHybridVision
 
-[fullconsole.pdf](https://github.com/user-attachments/files/31124241/fullconsole.pdf)
+<img width="1240" height="691" alt="image" src="https://github.com/user-attachments/assets/37b4c516-2eff-4e29-808a-87cdaa8106a7" />
 
 ## Overview
 
