@@ -51,39 +51,38 @@
 ## Development Status
 
 ### Engineering
-[x] System Architecture
-[x] Channel Strip Design
-[x] Modular Processing Architecture
-[x] Digital Control & Recall
-[x] Immersive Audio Architecture
-[x] Schematics
-[x] Simulation
-[x] Technical Specifications
-[x] 2D CAD
-[ ] PCB Layout
-[ ] Prototype Fabrication
-[ ] Prototype Testing
-[ ] Design Revision
+- [x] System Architecture
+- [x] Channel Strip Design
+- [x] Modular Processing Architecture
+- [x] Digital Control & Recall
+- [x] Immersive Audio Architecture
+- [x] Schematics
+- [x] Simulation
+- [x] Technical Specifications
+- [x] 2D CAD
+- [ ] Prototype Fabrication
+- [ ] Prototype Testing
+- [ ] Design Revision
 
 ### Documentation
-[x] Product Overview
-[x] Technical Specification
-[x] System Architecture
-[x] Test Plan
-[ ] Test Results
+- [x] Product Overview
+- [x] Technical Specification
+- [x] System Architecture
+- [x] Test Plan
+- [ ] Test Results
 
 ### Sponsorship
-[x] Executive Summary
-[x] Sponsor Presentation
-[x] Prototype Budget / BOM
-[x] Development Roadmap
-[ ] Sponsorship Outreach
-[ ] Sponsorship Agreements
+- [x] Executive Summary
+- [x] Sponsor Presentation
+- [x] Prototype Budget / BOM
+- [x] Development Roadmap
+- [ ] Sponsorship Outreach
+- [ ] Sponsorship Agreements
 
 ### Production
-[ ] Manufacturing Validation
-[ ] Production Design
-[ ] Manufacturing
+- [ ] Manufacturing Validation
+- [ ] Production Design
+- [ ] Manufacturing
 
 ## Development
 
