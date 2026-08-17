@@ -100,6 +100,20 @@ You can click the "Sponsor" button or go to the GoFundMe here: https://gofund.me
 
 None!
 
+## Why Sponsor now?
+
+### Lowest cost, Highest influence
+- Before fabrication, your input influences design decisions. Like an input on features you may want and component choices.
+
+### Cheapest dollar-for-impact
+- Sponsors cand donate very little amount of money, but still claim they helped build this from the beginning.
+
+### First-mover association
+- When PRISM starts manufacturing, early sponsors of this project will blow up.
+
+### Money is needed at this stage
+- Fabrication is the most expensive step. If sponsors invest later, it is less needed and less rewarded.
+
 ## What You Get
 
 * Brand Placement: Your logo or name will be featured on the PRISM console, documentation, and on the KV designs website.
