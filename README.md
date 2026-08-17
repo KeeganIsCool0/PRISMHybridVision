@@ -40,6 +40,27 @@
 * Full Recall
 - 100 mm motorized faders per channel
 
+## Why Sponsor now?
+
+### Lowest cost, Highest influence
+- Before fabrication, your input influences design decisions. Like an input on features you may want and component choices.
+
+### Cheapest dollar-for-impact
+- Sponsors cand donate very little amount of money, but still claim they helped build this from the beginning.
+
+### First-mover association
+- When PRISM starts manufacturing, early sponsors of this project will blow up.
+
+### Money is needed at this stage
+- Fabrication is the most expensive step. If sponsors invest later, it is less needed and less rewarded.
+
+## What You Get
+
+* Brand Placement: Your logo or name will be featured on the PRISM console, documentation, and on the KV designs website.
+* Public credit, Named as a partner/sponsor in the spec doc, repo, and any demo material.
+* Early Access, First look at working prototypes, and input on features that affect your use case.
+* For sponsors with sizable impact, you may get $20,000 in profits.
+
 ## Channel Model
 <img width="595" height="841" alt="image" src="https://github.com/user-attachments/assets/79c7f222-74c7-4211-ae90-7f256c7b518e" />
 
@@ -99,26 +120,5 @@ This project would not be possible without SSL, Neve, and API. Thank you for giv
 You can click the "Sponsor" button or go to the GoFundMe here: https://gofund.me/b56c8fe3b 
 
 None!
-
-## Why Sponsor now?
-
-### Lowest cost, Highest influence
-- Before fabrication, your input influences design decisions. Like an input on features you may want and component choices.
-
-### Cheapest dollar-for-impact
-- Sponsors cand donate very little amount of money, but still claim they helped build this from the beginning.
-
-### First-mover association
-- When PRISM starts manufacturing, early sponsors of this project will blow up.
-
-### Money is needed at this stage
-- Fabrication is the most expensive step. If sponsors invest later, it is less needed and less rewarded.
-
-## What You Get
-
-* Brand Placement: Your logo or name will be featured on the PRISM console, documentation, and on the KV designs website.
-* Public credit, Named as a partner/sponsor in the spec doc, repo, and any demo material.
-* Early Access, First look at working prototypes, and input on features that affect your use case.
-* For sponsors with sizable impact, you may get $20,000 in profits.
 
 
