@@ -40,6 +40,10 @@
 * Full Recall
 - 100 mm motorized faders per channel
 
+## Sponsorship Inquiries
+
+If you have questions, please fill out the contact forum @ https://tally.so/r/wzlvW8 
+
 ## Why Sponsor now?
 
 ### Lowest cost, Highest influence
