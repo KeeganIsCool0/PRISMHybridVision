@@ -63,23 +63,23 @@
 - [x] Complete PCB layouts
 - [x] Executive Summary
 - [x] Sponsorship Presentation
-- [x] Prototype Busdget
+- [x] Prototype Budget
 - [x] Roadmap
 - [x] Sponsorship Letters
 - [ ] Goal Reached!
 - [ ] Build Prototype Channel
-- [ ] Intergrate modular Processing
-- [ ] Intergrate microcontroller
-- [ ] Test compleate signal path
-- [ ] Measure noise, frequncies, distortion, and crosstalk
+- [ ] Integrate modular Processing
+- [ ] Integrate microcontroller
+- [ ] Test complete signal path
+- [ ] Measure noise, frequencies, distortion, and crosstalk
 - [ ] Revise (If Needed)
 - [ ] Build control computer
 - [ ] Implement module Identification
 - [ ] Implement preset/scene storage
-- [ ] Develop DAW Comunication
-- [ ] Test Console and DAW Intergration
+- [ ] Develop DAW Communication
+- [ ] Test Console and DAW Integration
 - [ ] Build Prototype Mix Bus
-- [ ] Intergrate multiple modules
+- [ ] Integrate multiple modules
 - [ ] Build 8-Channel Prototype
 - [ ] Build Software and Firmware
 - [ ] Complete System Testing
