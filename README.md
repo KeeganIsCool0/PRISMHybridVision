@@ -35,7 +35,7 @@
 - 8 Sub-Groups
 * Stereo + Monitor Outputs
 - 44.1-192 kHz Sample Rates
-* 48-24 Bit Depth
+* Bit Depth: 24-Bit
 - MADI Digital Routing Interface
 * Full Recall
 - 100 mm motorized faders per channel
