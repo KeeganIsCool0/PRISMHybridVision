@@ -102,4 +102,9 @@ None!
 
 ## What You Get
 
+* Brand Placement: Your logo or name will be featured on the PRISM console, documentation, and on the KV designs website.
+* Public credit, Named as a partner/sponsor in the spec doc, repo, and any demo material.
+* Early Access, First look at working prototypes, and input on features that affect your use case.
+* For sponsors with sizable impact, you may get $20,000 in profits.
+
 
