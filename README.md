@@ -65,6 +65,9 @@ If you have questions, please fill out the contact forum @ https://tally.so/r/wz
 * Early Access, First look at working prototypes, and input on features that affect your use case.
 * For sponsors with sizable impact, you may get $20,000 in profits.
 
+## About the Engineer
+PRISM is designed and documented by a solo audio engineer. What started as a fascination with electronics has grown into building a full console.
+
 ## Channel Model
 <img width="595" height="841" alt="image" src="https://github.com/user-attachments/assets/79c7f222-74c7-4211-ae90-7f256c7b518e" />
 
