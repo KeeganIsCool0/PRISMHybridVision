@@ -47,7 +47,7 @@ If you have questions, please fill out the contact forum @ https://tally.so/r/wz
 ## Why Sponsor now?
 
 ### Lowest cost, Highest influence
-- Before fabrication, your input influences design decisions. Like an input on features you may want and component choices.
+- Before fabrication, your input influences design decisions. Like get input on features you may want and component choices.
 
 ### Cheapest dollar-for-impact
 - Sponsors cand donate very little amount of money, but still claim they helped build this from the beginning.
