@@ -42,9 +42,9 @@
 
 ## Sponsorship Inquiries
 
-If you have questions, please fill out the contact forum @ https://tally.so/r/wzlvW8 
-You can find more information here: [sponsorprospect.pdf ](https://github.com/KeeganIsCool0/PRISMHybridVision/blob/8fa20fe1b06c27af627f0e152fa95f8308107635/sponsorprospect.pdf)
-When clicking the .pdf link, you will be redirected to a new branch, go back to the main branch by selecting the branches at the top.
+- If you have questions, please fill out the contact forum @ https://tally.so/r/wzlvW8 
+- You can find more information here: [sponsorprospect.pdf ](https://github.com/KeeganIsCool0/PRISMHybridVision/blob/8fa20fe1b06c27af627f0e152fa95f8308107635/sponsorprospect.pdf)
+- When clicking the .pdf link, you will be redirected to a new branch, go back to the main branch by selecting the branches at the top.
 
 ## Why Sponsor now?
 
