@@ -43,7 +43,7 @@
 ## Sponsorship Inquiries
 
 If you have questions, please fill out the contact forum @ https://tally.so/r/wzlvW8 
-
+You can find more information here: 
 ## Why Sponsor now?
 
 ### Lowest cost, Highest influence
