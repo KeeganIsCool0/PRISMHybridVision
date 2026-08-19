@@ -50,10 +50,10 @@ If you have questions, please fill out the contact forum @ https://tally.so/r/wz
 - Before fabrication, your input influences design decisions. Like get input on features you may want and component choices.
 
 ### Cheapest dollar-for-impact
-- Sponsors cand donate very little amount of money, but still claim they helped build this from the beginning.
+- Sponsors can donate to the project from the beginning while contributing minimally.
 
 ### First-mover association
-- When PRISM starts manufacturing, early sponsors of this project will blow up.
+- Early sponsorship provides the opportunity to support PRISM at its most influential stage; help shape the project from documentation to prototyping.
 
 ### Money is needed at this stage
 - Fabrication is the most expensive step. If sponsors invest later, it is less needed and less rewarded.
