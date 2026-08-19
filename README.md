@@ -43,7 +43,7 @@
 ## Sponsorship Inquiries
 
 If you have questions, please fill out the contact forum @ https://tally.so/r/wzlvW8 
-You can find more information here: sponsorprospect.pdf 
+You can find more information here: [sponsorprospect.pdf ](https://github.com/KeeganIsCool0/PRISMHybridVision/blob/8fa20fe1b06c27af627f0e152fa95f8308107635/sponsorprospect.pdf)
 
 ## Why Sponsor now?
 
