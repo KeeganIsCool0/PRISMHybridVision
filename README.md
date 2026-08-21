@@ -70,6 +70,10 @@
 ## About the Engineer
 PRISM is designed and documented by a solo audio hardware designer. What started as a fascination with electronics has grown into building a full console combining analog processing, digital control, automation, and immersive audio architecture. This project has progressed from concept to a project with technical documentation, and a prototype test plan completed. The next step is bringing Prototype 1A into the real world.
 
+## Test the Channel Strip
+
+Go to https://github.com/KeeganIsCool0/PRISM_ChannelStrip to test the channel strip on your computer!
+
 ## Channel Model
 <img width="595" height="841" alt="image" src="https://github.com/user-attachments/assets/79c7f222-74c7-4211-ae90-7f256c7b518e" />
 
