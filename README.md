@@ -134,4 +134,8 @@ You can click the "Sponsor" button or go to the GoFundMe here: https://gofund.me
 
 PRISM Hybrid Vision is currently seeking sponsors and technical partners to support prototype fabrication, component acquisition, testing, and development.
 
+## LICENSE
+
+Copyright Keegan V. All rights reserved. See LICENSE for more info.
+
 
