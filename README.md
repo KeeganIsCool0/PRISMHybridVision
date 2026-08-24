@@ -132,7 +132,7 @@ This project would not be possible without SSL, Neve, and API. Thank you for giv
 
 You can click the "Sponsor" button or go to the GoFundMe here: https://gofund.me/b56c8fe3b 
 
-[![Buy Me a Coffee](https://shields.io)](https://buymeacoffee.com)
+<a href="https://www.buymeacoffee.com/roniemartinez" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 PRISM Hybrid Vision is currently seeking sponsors and technical partners to support prototype fabrication, component acquisition, testing, and development.
 
