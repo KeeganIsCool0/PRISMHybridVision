@@ -8,7 +8,7 @@
 
 ## Why PRISM?
 
-* PRISM is modualr: No need to replace the console! Each channel module can be replaced with anew compatible one!
+* PRISM is modular: No need to replace the console! Each channel module can be replaced with anew compatible one!
 * No compromises: This console combines true analog warmth with digital control, automation, and DAW integration.
 * Instead of buying different types of processors, you can select them purely on the console
 * Digital routing and processing makes studio workflow faster using automation and recall.
