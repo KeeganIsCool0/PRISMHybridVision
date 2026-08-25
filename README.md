@@ -14,6 +14,11 @@
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
+<div align="center">
+
+PRISM Hybrid Vision is a digital-analog recording console that combines digital workflows with true analog sound. 
+
+</div>
 
 <img width="1240" height="691" alt="image" src="https://github.com/user-attachments/assets/37b4c516-2eff-4e29-808a-87cdaa8106a7" />
 
