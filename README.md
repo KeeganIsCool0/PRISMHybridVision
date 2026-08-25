@@ -97,19 +97,19 @@ PRISM Hybrid Vision is a digital-analog recording console that combines digital 
 ### Money is needed at this stage
 - Fabrication is the most expensive step. If sponsors invest later, it is less needed and less rewarded.
 
-## What You Get
+## What You Get**
 
 * Brand Placement: Your logo or name will be featured on the PRISM console, documentation, and on the KV designs website.
 * Public credit, Named as a partner/sponsor in the spec doc, repo, and any demo material.
 * Early Access, First look at working prototypes, and input on features that affect your use case.
-* For sponsors with sizable impact, you may get $20,000 in profits.
+* For sponsors with sizable impact, you may get $20,000 in profits.*
 
 ## About the Engineer
 PRISM is designed and documented by a solo audio hardware designer. What started as a fascination with electronics has grown into building a full console combining analog processing, digital control, automation, and immersive audio architecture. This project has progressed from concept to a project with technical documentation, and a prototype test plan completed. The next step is bringing Prototype 1A into the real world.
 
 ## Test the Channel Strip
 
-Go to https://github.com/KeeganIsCool0/PRISM_ChannelStrip to test the channel strip on your computer!
+Go to https://github.com/KeeganIsCool0/PRISM_ChannelStrip to test the channel strip on your computer!†
 
 ## Channel Model
 <img width="595" height="841" alt="image" src="https://github.com/user-attachments/assets/79c7f222-74c7-4211-ae90-7f256c7b518e" />
@@ -195,6 +195,12 @@ PRISM Hybrid Vision is currently seeking sponsors and technical partners to supp
 [![Contributors](https://contrib.rocks/image?repo=KeeganIsCool0/PRISMHybridVision)](https://github.com/KeeganIsCool0/PRISMHybridVision/graphs/contributors)
 
 PRISM Hybrid Vision is currently seeking sponsors and technical partners to support prototype fabrication, component acquisition, testing, and development.
+
+
+## NOTICE
+*See Sponsor Prospectus for more info.
+**Depends on sponsor tier.
+† Application does not emulate true analog sound. 
 
 <div align="center">
 
