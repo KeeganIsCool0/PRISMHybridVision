@@ -33,7 +33,8 @@ PRISM Hybrid Vision is a digital-analog recording console that combines digital 
 
 </div>
 
-| Under active development. Some Bugs are present.
+> [!NOTE]
+> This project is under active development. Bugs are expected.
 
 <img width="1240" height="691" alt="image" src="https://github.com/user-attachments/assets/37b4c516-2eff-4e29-808a-87cdaa8106a7" />
 
