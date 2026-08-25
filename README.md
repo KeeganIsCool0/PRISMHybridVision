@@ -158,6 +158,9 @@ PRISM Hybrid Vision is currently seeking sponsors and technical partners to supp
 
 ## LICENSE
 
-Copyright Keegan V. All rights reserved. See LICENSE for more info.
+## Licensing
+
+- **Code**: Licensed under the [MIT License](LICENSE)
+- **Documentation & schematics**: Licensed under [CC BY-SA 4.0](LICENSE-DOCS.md)
 
 
