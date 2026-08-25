@@ -1,5 +1,6 @@
 # <img width="1100" height="350" alt="prismlogo" src="https://github.com/user-attachments/assets/4e40071b-a3a9-403c-a892-f968315ee6f5" />
 
+[![License: MIT](https://shields.io)](https://opensource.org)
 
 
 <img width="1240" height="691" alt="image" src="https://github.com/user-attachments/assets/37b4c516-2eff-4e29-808a-87cdaa8106a7" />
