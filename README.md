@@ -1,6 +1,6 @@
 # PRISMHybridVision 
 
-<img width="794" height="1123" alt="prismlogo" src="https://github.com/user-attachments/assets/218cb96e-c07f-44e0-abe6-eaa094f5635a" />
+<img width="794" height="100" alt="prismlogo" src="https://github.com/user-attachments/assets/218cb96e-c07f-44e0-abe6-eaa094f5635a" />
 
 <img width="1240" height="691" alt="image" src="https://github.com/user-attachments/assets/37b4c516-2eff-4e29-808a-87cdaa8106a7" />
 
