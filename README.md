@@ -1,4 +1,86 @@
-# PRISMHybridVision
+# PRISMHybridVision <img width="794" height="1123" alt="prismlogo" src="https://github.com/user-attachments/assets/c1a4a9e1-75e4-4568-921f-603bbfb12277" /><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="prismlogo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.008211"
+     inkscape:cx="348.56894"
+     inkscape:cy="390.14824"
+     inkscape:window-width="1920"
+     inkscape:window-height="1006"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:none;stroke:#ffffff;stroke-width:0.578001"
+       id="path1"
+       cx="103.8196"
+       cy="90.446899"
+       rx="11.989319"
+       ry="5.335906" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:0.578001"
+       d="M 89.854017,99.340073 104.0831,77.337697 117.12643,99.603575 Z"
+       id="path2" />
+    <circle
+       style="fill:none;stroke:#ffffff;stroke-width:0.578001"
+       id="path3"
+       cx="103.8196"
+       cy="89.854019"
+       r="1.5810091" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:0.578001"
+       d="m 78.068899,83.509503 c 0.389049,-1.48853 3.29861,19.623757 7.601643,0.499303 0.02502,-0.111199 2.398807,-8.431635 6.201009,6.38857"
+       title="sin(x)"
+       id="path4"
+       sodipodi:nodetypes="csc" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;writing-mode:lr-tb;direction:ltr;white-space:pre;inline-size:82.9276;fill:none;stroke:#ffffff;stroke-width:0.578001"
+       x="75.229683"
+       y="113.1739"
+       id="text5"
+       transform="translate(-7.6415442,-3.1620183)"><tspan
+         x="75.229683"
+         y="113.1739"
+         id="tspan2"><tspan
+           style="stroke-width:0.578"
+           id="tspan1">PRISM Hybrid Vision</tspan></tspan></text>
+  </g>
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:0.578001"
+     d="m 115.67717,90.381023 h 9.74955 l 4.08428,0"
+     id="path5" />
+</svg>
+
+
 
 <img width="1240" height="691" alt="image" src="https://github.com/user-attachments/assets/37b4c516-2eff-4e29-808a-87cdaa8106a7" />
 
