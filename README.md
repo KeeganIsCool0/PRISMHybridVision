@@ -4,7 +4,7 @@
   
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa] 
 ![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg?logo=c%2B%2B&logoColor=white) 
-![Python](https://img.shields.io/badge/python-3.11-blue.svg?logo=python&logoColor=white) ![License](https://img.shields.io/badge/license-MIT-blue.svg) 
+![Python](https://img.shields.io/badge/python-3.11-blue.svg?logo=python&logoColor=white) ![License](https://img.shields.io/badge/license-GPLv3-blue.svg?logo=gnu&logoColor=white)
 ![GitHub Repo stars](https://img.shields.io/github/stars/KeeganIsCool0/PRISMHybridVision) 
 ![GitHub forks](https://img.shields.io/github/forks/KeeganIsCool0/PRISMHybridVision) ![GitHub release](https://img.shields.io/github/v/release/KeeganIsCool0/PRISMHybridVision) 
 
@@ -160,7 +160,7 @@ PRISM Hybrid Vision is currently seeking sponsors and technical partners to supp
 
 ## Licensing
 
-- **Code**: Licensed under the [MIT License](LICENSE)
+- **Code**: Licensed under the [GPLv3 LICENCE](LICENSE)
 - **Documentation & schematics**: Licensed under [CC BY-SA 4.0](LICENSE-DOCS.md)
 
 
