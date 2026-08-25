@@ -191,9 +191,9 @@ PRISM Hybrid Vision is currently seeking sponsors and technical partners to supp
 - **Documentation**: Licensed under [CC BY-SA 4.0](LICENCE-DOCS)
 - **Schematics, PCB Designs, CAD, and hardware**: Licensed under [CERN-OHL-S](LICENCE-CAD.md)
 
-## Contributors & Sponsors
+## Contributors & Sponsors Hall Of Fame
 
-[![Contributors](https://contrib.rocks/image?repo=KeeganIsCool0/PRISMHybridVision)](https://github.com/KeeganIsCool0/PRISMHybridVision/graphs/contributors)
+PRISM Hybrid Vision is currently seeking sponsors and technical partners to support prototype fabrication, component acquisition, testing, and development.
 
 <div align="center">
 
