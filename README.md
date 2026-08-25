@@ -3,6 +3,7 @@
 <div align="center">
   
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa] 
+[![License: CERN-OHL-S v2](https://img.shields.io/badge/License-CERN--OHL--S%20v2-orange.svg?logo=circuitverse&logoColor=white)](https://ohwr.org/cern_ohl_s_v2.txt)
 ![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg?logo=c%2B%2B&logoColor=white) 
 ![Python](https://img.shields.io/badge/python-3.11-blue.svg?logo=python&logoColor=white) ![License](https://img.shields.io/badge/license-GPLv3-blue.svg?logo=gnu&logoColor=white)
 ![GitHub Repo stars](https://img.shields.io/github/stars/KeeganIsCool0/PRISMHybridVision) 
