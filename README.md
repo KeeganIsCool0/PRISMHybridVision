@@ -156,6 +156,16 @@ Go to https://github.com/KeeganIsCool0/PRISM_ChannelStrip to test the channel st
 - [ ] Production Design
 - [ ] Manufacturing
 
+## Comparison
+
+| Console Type             | Analog Character | Digital Recall| Full Automation| Modular Expansion |
+|--------------------------|------------------|---------------|----------------|-------------------|
+| No Console               |                  |               |                |                   |
+| Vintage Analog Consoles  |                  |               |                |                   |
+| Fully Digital Consoles   |                  |               |                |                   |
+| Hybrid Consoles          |                  |               |                |                   |
+| PRISM Hybrid Vision      |                  |               |                |                   |
+
 ## Development
 
 To get schematics and other development info please fill the contact form @ https://tally.so/r/wzlvW8
