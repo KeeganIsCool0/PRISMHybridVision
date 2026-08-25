@@ -23,6 +23,12 @@ PRISM Hybrid Vision is a digital-analog recording console that combines digital 
 
 <div align="center">
 
+[Documentation](./Docs) · [Firmware](./Firmware) · [Hardware](./Hardware) ·
+  
+</div>
+
+<div align="center">
+
   [![Donate](https://img.shields.io/badge/Donate-GoFundMe-00B964?style=for-the-badge&logo=gofundme&logoColor=white)](https://gofund.me/79449fde0)
 
 </div>
