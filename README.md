@@ -1,15 +1,6 @@
 # <img width="1100" height="350" alt="prismlogo" src="https://github.com/user-attachments/assets/4e40071b-a3a9-403c-a892-f968315ee6f5" />
 
-Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
-
-This work is licensed under a
-[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
-
-[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
-
-[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
-[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
-[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 
 <img width="1240" height="691" alt="image" src="https://github.com/user-attachments/assets/37b4c516-2eff-4e29-808a-87cdaa8106a7" />
