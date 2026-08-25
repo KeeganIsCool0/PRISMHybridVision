@@ -118,6 +118,9 @@ Go to https://github.com/KeeganIsCool0/PRISM_ChannelStrip to test the channel st
 
 <img width="1240" height="772" alt="image" src="https://github.com/user-attachments/assets/26712e4a-191a-48d1-bb43-06089ded5b41" />
 
+## Designing Process
+
+<img width="1920" height="1080" alt="Whiteboard" src="https://github.com/user-attachments/assets/e1de475b-02ea-4c5a-97b8-b2637a0bed23" />
 
 ## Development Status
 
