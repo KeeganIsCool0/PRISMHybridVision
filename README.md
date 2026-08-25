@@ -198,9 +198,9 @@ PRISM Hybrid Vision is currently seeking sponsors and technical partners to supp
 
 
 ## NOTICE
-*See Sponsor Prospectus for more info.
-**Depends on sponsor tier.
-† Application does not emulate true analog sound. 
+- *See Sponsor Prospectus for more info.
+- **Depends on sponsor tier.
+- † Application does not emulate true analog sound. 
 
 <div align="center">
 
