@@ -1,6 +1,6 @@
 # <img width="1100" height="350" alt="prismlogo" src="https://github.com/user-attachments/assets/4e40071b-a3a9-403c-a892-f968315ee6f5" />
 
-[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa] [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)! ![Python](https://img.shields.io/badge/python-3.11-blue.svg?logo=python&logoColor=white)
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa] [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![Python](https://img.shields.io/badge/python-3.11-blue.svg?logo=python&logoColor=white)
 
 
 
