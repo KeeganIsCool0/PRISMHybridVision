@@ -158,13 +158,13 @@ Go to https://github.com/KeeganIsCool0/PRISM_ChannelStrip to test the channel st
 
 ## Comparison
 
-| Console Type             | Analog Character | Digital Recall| Full Automation| Modular Expansion |
-|--------------------------|------------------|---------------|----------------|-------------------|
-| No Console               | :x:              | :x:           | :x:            | :x:               |
-| Vintage Analog Consoles  |:white_check_mark:|               |                |                   |
-| Fully Digital Consoles   |                  |               |                |                   |
-| Hybrid Consoles          |                  |               |                |                   |
-| PRISM Hybrid Vision      |                  |               |                |                   |
+| Console Type             | Analog Character | Digital Recall   | Full Automation  | Modular Expansion |
+|--------------------------|------------------|------------------|------------------|-------------------|
+| No Console               | :x:              | :x:              | :x:              | :x:               |
+| Vintage Analog Consoles  |:white_check_mark:| :x:              | :x:              | :x:               |
+| Fully Digital Consoles   | :x:              |:white_check_mark:|:white_check_mark:| Limited           |
+| Hybrid Consoles          | Partial          |:white_check_mark:|Partial           | :x:               |
+| PRISM Hybrid Vision      |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: |
 
 ## Development
 
