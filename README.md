@@ -161,6 +161,7 @@ PRISM Hybrid Vision is currently seeking sponsors and technical partners to supp
 ## Licensing
 
 - **Code**: Licensed under the [GPLv3 LICENCE](LICENSE)
-- **Documentation & schematics**: Licensed under [CC BY-SA 4.0](LICENSE-DOCS.md)
+- **Documentation**: Licensed under [CC BY-SA 4.0](LICENSE-DOCS.md)
+- **Schematics, PCB Designs, CAD, and hardware**: Licensed under [CERN-OHL-S](LICENCE-CAD.md) 
 
 
