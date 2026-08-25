@@ -192,6 +192,8 @@ PRISM Hybrid Vision is currently seeking sponsors and technical partners to supp
 
 ## Contributors & Sponsors Hall Of Fame
 
+## Contributors
+
 [![Contributors](https://contrib.rocks/image?repo=KeeganIsCool0/PRISMHybridVision)](https://github.com/KeeganIsCool0/PRISMHybridVision/graphs/contributors)
 
 PRISM Hybrid Vision is currently seeking sponsors and technical partners to support prototype fabrication, component acquisition, testing, and development.
