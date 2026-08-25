@@ -36,9 +36,10 @@ PRISM Hybrid Vision is a digital-analog recording console that combines digital 
 > [!NOTE]
 > This project is under active development. Bugs are expected.
 
+## Overview
+
 <img width="1240" height="691" alt="image" src="https://github.com/user-attachments/assets/37b4c516-2eff-4e29-808a-87cdaa8106a7" />
 
-## Overview
 
   The PRISM Hybrid Vision is a hybrid digital/analog immersive sound mixing and mastering console. The console is designed for DAW workflows and professional studio use. The console also has a modular architecture, so you can replace modules with new ones without replacing the entire console. The console also has full DAW automation without compromising on true analog sound. The console also has switchable preamp, conversion, and output styles. It can select from OLD, OLD-NEW, and NEW. Each channel has a 5 band and 10 band EQ, the 5 band is for broader selection of frequencies, the 10 band has a more sophisticated selection of frequencies to choose from. There are two compressors per channel. One VCA and one Opto compressor chained together. These two compressors create the best duo per channel for excellent sound. Each channel comes with 3 Stereo AUX sends. Each channel also comes with MUTE, SOLO, RECORD, and CUT buttons, which are fully automated from the center console.
 
