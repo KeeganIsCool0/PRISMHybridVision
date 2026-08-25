@@ -160,7 +160,7 @@ Go to https://github.com/KeeganIsCool0/PRISM_ChannelStrip to test the channel st
 
 | Console Type             | Analog Character | Digital Recall| Full Automation| Modular Expansion |
 |--------------------------|------------------|---------------|----------------|-------------------|
-| No Console               |                  |               |                |                   |
+| No Console               | [x]              | [x]           | [x]            | [x]               |
 | Vintage Analog Consoles  |                  |               |                |                   |
 | Fully Digital Consoles   |                  |               |                |                   |
 | Hybrid Consoles          |                  |               |                |                   |
