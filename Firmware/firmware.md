@@ -13,4 +13,4 @@ Building the firmware during the prototype is better so I know the exact pins to
 
 ## Contributing
 
-See [CONTRIBUTING](CONTRIBUTING.md) for more information.
+See CONTRIBUTING.md for more information. ***SOFTWARE DEVELOPERS WANTED***
