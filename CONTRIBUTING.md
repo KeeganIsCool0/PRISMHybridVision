@@ -1,6 +1,6 @@
 # Contributing
 
-This document shows you how to make a pull request.
+This document shows you how to make a pull request. **Engineers and software developers wanted!**
 
 ## Downloading & Editing
 
