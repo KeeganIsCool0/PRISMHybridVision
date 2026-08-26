@@ -80,7 +80,7 @@ PRISM Hybrid Vision is a digital-analog recording console that combines digital 
 ## Sponsorship Inquiries
 
 - If you have questions, please fill out the contact forum @ https://tally.so/r/wzlvW8
-- You can find more information here: 
+- You can find more information here: [Sponsorprospectus.pdf](https://github.com/KeeganIsCool0/PRISMHybridVision/blob/e2de69fe6c8f7473deff8fb0d246809338550640/sponsorprospect.pdf) 
 - When clicking the .pdf link, you will be redirected to a new branch, go back to the main branch by selecting the branches at the top.
 
 ## Why Sponsor now?
