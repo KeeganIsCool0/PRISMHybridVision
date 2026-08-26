@@ -3,8 +3,8 @@
 Rough framework of the app is complete.
 
 - [x] Framework
-- [ ] Backend
-- [ ] UI
+- [x] Backend
+- [x] UI
 - [ ] Implementation
 
 ## Why not now?
