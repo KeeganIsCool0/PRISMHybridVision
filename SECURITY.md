@@ -4,12 +4,15 @@
 
 The latest version of this repo is being supported with security updates.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| v1.2    | :white_check_mark: |
-| v1.0    | :x:                |
-| v1.1    | :white_check_mark: |
-| < v1.0  | :x:                |
+| Version        | Updates      |
+|----------------|--------------|
+| Latest         | :✅:
+|
+
+
+
+
+
 
 ## Reporting a Vulnerability
 
