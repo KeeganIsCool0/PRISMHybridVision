@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/atmos-panner.dir/link.d "CMakeFiles/atmos-panner.dir/main.cpp.o" "CMakeFiles/atmos-panner.dir/AudioEngine.cpp.o" "CMakeFiles/atmos-panner.dir/PipeWireOutput.cpp.o" "CMakeFiles/atmos-panner.dir/UserInterface.cpp.o" -o atmos-panner  /usr/lib64/libpipewire-0.3.so
