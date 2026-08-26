@@ -6,12 +6,10 @@ The latest version of this repo is being supported with security updates.
 
 | Version        | Updates      |
 |----------------|--------------|
-| Latest         | :✅:
-|
-
-
-
-
+| Latest         | ✅           |
+| v0.2           | ✅           |
+| v0.1           | :x:          |
+| v0.0           | :x:          |
 
 
 ## Reporting a Vulnerability
