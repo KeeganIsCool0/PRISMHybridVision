@@ -113,7 +113,7 @@ A C++20 production panner that renders a mono source to a **17-channel 9.2.6 spe
 
 This project sends PCM through PipeWire. It does **not** create Dolby Atmos ADM metadata or a Dolby-encoded master; Dolby encoding and certified rendering require Dolby's licensed tooling. Route the PipeWire node to a correctly configured 17-channel / 9.2.6 endpoint or monitoring graph.
 
-## Build
+### Build
 
 Fedora/RHEL:
 
@@ -146,7 +146,7 @@ quit
 
 Azimuth is -180° (rear left) to +180° (rear right); elevation is -30° to +90°. Channel indices follow the displayed `FL, FC, FR, WL, WR, SL, SR, BL, BR, LFE1, LFE2, TFL, TFR, TML, TMR, TBL, TBR` order.
 
-### Test the Channel Strip
+## Test the Channel Strip
 
 Go to https://github.com/KeeganIsCool0/PRISM_ChannelStrip to test the channel strip on your computer!†
 
