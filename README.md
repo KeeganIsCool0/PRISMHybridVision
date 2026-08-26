@@ -107,7 +107,46 @@ PRISM Hybrid Vision is a digital-analog recording console that combines digital 
 ## About the Engineer
 PRISM is designed and documented by a solo audio hardware designer. What started as a fascination with electronics has grown into building a full console combining analog processing, digital control, automation, and immersive audio architecture. This project has progressed from concept to a project with technical documentation, and a prototype test plan completed. The next step is bringing Prototype 1A into the real world.
 
-## Test the Channel Strip
+## Firmware
+
+A C++20 production panner that renders a mono source to a **17-channel 9.2.6 speaker bed** (9 bed speakers, two LFE feeds, and six height speakers). It provides a compact producer UI for azimuth, elevation, distance, and spread, plus per-output trim and two shelving filters for room correction.
+
+This project sends PCM through PipeWire. It does **not** create Dolby Atmos ADM metadata or a Dolby-encoded master; Dolby encoding and certified rendering require Dolby's licensed tooling. Route the PipeWire node to a correctly configured 17-channel / 9.2.6 endpoint or monitoring graph.
+
+## Build
+
+Fedora/RHEL:
+
+```sh
+sudo dnf install cmake gcc-c++ pipewire-devel
+cmake -S . -B build
+cmake --build build
+ctest --test-dir build --output-on-failure
+```
+
+Run it within a logged-in PipeWire session:
+
+```sh
+./build/atmos-panner
+```
+
+The source is currently a 440 Hz reference tone. Replace the tone generator in `PipeWireOutput.cpp` with decoded input audio (or add an input stream) for program material.
+
+### Producer controls
+
+At the spatial-panning prompt:
+
+```text
+pos <azimuth> <elevation> <distance>
+spread <degrees>
+trim <channel 0-16> <dB>
+room <channel 0-16> <low-shelf dB> <high-shelf dB>
+quit
+```
+
+Azimuth is -180° (rear left) to +180° (rear right); elevation is -30° to +90°. Channel indices follow the displayed `FL, FC, FR, WL, WR, SL, SR, BL, BR, LFE1, LFE2, TFL, TFR, TML, TMR, TBL, TBR` order.
+
+### Test the Channel Strip
 
 Go to https://github.com/KeeganIsCool0/PRISM_ChannelStrip to test the channel strip on your computer!†
 
