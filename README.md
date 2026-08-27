@@ -211,10 +211,14 @@ Go to https://github.com/KeeganIsCool0/PRISM_ChannelStrip to test the channel st
 To get schematics and other development info please fill the contact form @ https://tally.so/r/wzlvW8
 
 Thank you for being interested in this project!
+### AI Used
 
-## Frameworks Used
+![Claude](https://img.shields.io/badge/claude-%23D97757.svg?style=for-the-badge&logo=claude&logoColor=white))
+
+### Frameworks Used
 
 ![Drawio](https://img.shields.io/badge/drawio-%23F08705.svg?style=for-the-badge&logo=diagrams.net&logoColor=white)
+![KiCad](https://img.shields.io/badge/kicad-%23314CB0.svg?style=for-the-badge&logo=kicad&logoColor=white)
 
 ## Credits
 
