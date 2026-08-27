@@ -216,7 +216,7 @@ Thank you for being interested in this project!
 
 ### AI Used
 
-![Claude](https://img.shields.io/badge/claude-%23D97757.svg?style=for-the-badge&logo=claude&logoColor=white))
+![Claude](https://img.shields.io/badge/claude-%23D97757.svg?style=for-the-badge&logo=claude&logoColor=white)
 
 ### Apps Used
 
