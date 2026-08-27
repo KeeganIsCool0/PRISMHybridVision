@@ -212,6 +212,10 @@ To get schematics and other development info please fill the contact form @ http
 
 Thank you for being interested in this project!
 
+## Frameworks Used
+
+![Drawio](https://img.shields.io/badge/drawio-%23F08705.svg?style=for-the-badge&logo=diagrams.net&logoColor=white)
+
 ## Credits
 
 This project would not be possible without SSL, Neve, and API. Thank you for giving me the inspiration for this project.
