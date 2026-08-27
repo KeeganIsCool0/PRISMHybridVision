@@ -212,7 +212,9 @@ To get schematics and other development info please fill the contact form @ http
 
 Thank you for being interested in this project!
 
-## Platforms Used
+## Credits
+
+This project would not be possible without SSL, Neve, and API. Thank you for giving me the inspiration for this project.
 
 ### AI Used
 
@@ -230,10 +232,6 @@ Thank you for being interested in this project!
 ![Python](https://img.shields.io/badge/python-%233670A0.svg?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 ![YAML](https://img.shields.io/badge/yaml-%23ffffff.svg?style=for-the-badge&logo=yaml&logoColor=151515)
-
-## Credits
-
-This project would not be possible without SSL, Neve, and API. Thank you for giving me the inspiration for this project.
 
 ## Sponsors
 
