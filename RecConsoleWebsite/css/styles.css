@@ -1,0 +1,442 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Page content styling */
+.page-content {
+    max-width: 1200px;
+    margin: 80px auto 0 auto; /* 80px for fixed navbar */
+    padding: 2rem;
+    min-height: calc(100vh - 200px); /* Account for navbar and footer */
+}
+
+.page-content h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Specific page styles */
+.specs-container, .tech-container, .doc-container, .roadmap-container, .about-container, .sponsor-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.spec-card, .tech-section, .doc-section, .roadmap-item, .faq-item, .team-member, .sponsor-level {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spec-card:hover, .tech-section:hover, .doc-section:hover, .roadmap-item:hover, .faq-item:hover, .team-member:hover, .sponsor-level:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.spec-card h2, .tech-section h2, .doc-section h2, .roadmap-item h3, .faq-item h3, .team-member h3, .sponsor-level h3 {
+    color: #3498db;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.spec-card h2::before, .tech-section h2::before, .doc-section h2::before, .roadmap-item h3::before, .faq-item h3::before, .team-member h3::before, .sponsor-level h3::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #3498db;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+}
+
+.spec-card ul, .tech-section ul, .doc-section ul, .roadmap-item ul, .faq-item ul, .team-member p {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.spec-card li, .tech-section li, .doc-section li, .roadmap-item li, .faq-item p, .team-member p {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Roadmap specific styles */
+.roadmap-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.roadmap-item {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.roadmap-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.roadmap-date {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    min-width: 120px;
+    font-weight: bold;
+}
+
+.roadmap-date .roadmap-date {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.roadmap-content {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.roadmap-content h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.roadmap-content ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.roadmap-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Team styles */
+.team-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.team-member {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.team-member h3 {
+    margin: 1rem 0 0.5rem 0;
+    color: #2c3e50;
+}
+
+.team-member p {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Sponsor styles */
+.sponsor-section {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.sponsor-level {
+    border-left: 4px solid #3498db;
+    padding-left: 1rem;
+}
+
+.sponsor-level h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+/* FAQ styles */
+.faq-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.faq-item h3 {
+    color: #2c3e50;
+    margin: 0 0 0.5rem 0;
+}
+
+.faq-item p {
+    color: #34495e;
+}
+
+/* Buttons in documentation */
+.doc-section .btn {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-content {
+        margin-top: 60px; /* Adjust for mobile navbar */
+        padding: 1rem;
+    }
+
+    .page-content h1 {
+        font-size: 2rem;
+    }
+
+    .specs-container, .tech-container, .doc-container, .roadmap-container, .about-container, .sponsor-container {
+        grid-template-columns: 1fr;
+    }
+
+    .roadmap-item {
+        flex-direction: column;
+    }
+
+    .roadmap-date {
+        min-width: auto;
+        padding: 1rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Navigation bar */
+nav {
+    background-color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    flex: 0 0 auto;
+    margin-right: 2rem;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-links {
+    flex: 1 1 auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6b6b;
+}
+
+/* Dropdown menus */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    padding: 0.5rem 0;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content li {
+    padding: 0.5rem 1.5rem;
+}
+
+.dropdown-content a {
+    color: #2c3e50;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.dropdown-content a:hover {
+    background-color: #f8f9fa;
+    border-radius: 2px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('../assets/gradient.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-text {
+    font-family: 'Courier New', monospace;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 2rem;
+    animation: typing 3s steps(40) forwards, blink 0.5s step-end infinite;
+    white-space: nowrap;
+    border-right: 2px solid rgba(255,255,255,0.7);
+    width: 0;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    animation: float 3s ease-in-out infinite;
+}
+
+.btn-primary {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 2px solid #ddd;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn-primary:hover {
+    background-color: #ff5252;
+}
+
+.btn-secondary:hover {
+    background-color: #e9ecef;
+    border-color: #bbb;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a img {
+    height: 30px;
+    width: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    filter: brightness(0) invert(1); /* Make the image white */
+}
+
+footer a:hover img {
+    opacity: 0.8;
+    transform: translateY(-5px); /* Float up on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
