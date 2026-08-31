@@ -9,7 +9,7 @@ Rough framework of the app is complete.
 
 ## Why not now?
 
-Building the firmware during the prototype is better so I know the exact pins to tell the computer to give signals to.
+Building the firmware during the prototype is better so the exact pins are known to tell the computer what to give signals to.
 
 ## Contributing
 
