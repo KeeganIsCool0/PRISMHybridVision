@@ -6,6 +6,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Any initialization code can go here
     console.log('PRISM Website loaded');
 
+    // Typing animation for hero text
+    const heroTextElement = document.querySelector('.hero-text');
+    if (heroTextElement) {
+        const fullText = heroTextElement.textContent;
+        heroTextElement.textContent = '';
+
+        let i = 0;
+        const timer = setInterval(() => {
+            if (i < fullText.length) {
+                heroTextElement.textContent += fullText.charAt(i);
+                i++;
+            } else {
+                clearInterval(timer);
+            }
+        }, 100); // typing speed in milliseconds per character
+    }
+
     // Example: Add active class to current page in navigation
     const currentPage = window.location.pathname.split('/').pop();
     const navLinks = document.querySelectorAll('.nav-links a');

@@ -3,9 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - PRISM Hybrid Vision</title>
+    <title>Specifications - PRISM Hybrid Vision</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Override styles for black theme - using more specific selectors */
+        body {
+            background-color: black !important;
+            color: white !important;
+            font-family: 'Courier New', monospace !important;
+        }
+
+        /* Override navbar styles */
+        nav {
+            background-color: black !important;
+            border-bottom: 1px solid #333 !important;
+            box-shadow: none !important;
+        }
+
+        .logo {
+            margin-right: 2rem !important;
+        }
+
+        .logo img {
+            filter: brightness(0) invert(1) !important;
+            height: 40px !important;
+            width: auto !important;
+        }
+
+        .nav-links {
+            gap: 2rem !important;
+            justify-content: center !important;
+        }
+
+        .nav-links li {
+            position: relative !important;
+        }
+
+        .nav-links a {
+            color: white !important;
+            text-decoration: none !important;
+            padding: 0.5rem 0 !important;
+            font-size: 1.1rem !important;
+            transition: color 0.3s ease !important;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b6b !important;
+        }
+
+        /* Override dropdown menus */
+        .dropdown-content {
+            display: none !important;
+            position: absolute !important;
+            background-color: black !important;
+            min-width: 200px !important;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) !important;
+            z-index: 1000 !important;
+            padding: 0.5rem 0 !important;
+            border-radius: 4px !important;
+            top: 100% !important;
+            left: 0 !important;
+            border: 1px solid #333 !important;
+        }
+
+        .dropdown-content li {
+            padding: 0.5rem 1.5rem !important;
+        }
+
+        .dropdown-content a {
+            color: white !important;
+            text-decoration: none !important;
+            display: block !important;
+            width: 100% !important;
+            padding: 0.5rem 0 !important;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #333 !important;
+            border-radius: 2px !important;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block !important;
+        }
+
+        /* Ensure content is visible */
+        h1, h2 {
+            color: white !important;
+            text-align: center !important;
+        }
+
+        /* Table styles */
+        table {
+            width: 80% !important;
+            margin: 20px auto !important;
+            border-collapse: collapse !important;
+        }
+
+        th, td {
+            border: 1px solid white !important;
+            padding: 12px !important;
+            text-align: left !important;
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .image-container, .pdf-container {
+            text-align: center !important;
+            margin: 30px 0 !important;
+        }
+
+        img, embed {
+            max-width: 100% !important;
+            height: auto !important;
+            border: 1px solid white !important;
+        }
+
+        .button-container {
+            text-align: center !important;
+            margin: 30px 0 !important;
+        }
+
+        .download-btn {
+            background-color: #4CAF50 !important;
+            border: none !important;
+            color: white !important;
+            padding: 15px 32px 32px !important;
+            text-align: center !important;
+            text-decoration: none !important;
+            display: inline-block !important;
+            font-size: 16px !important;
+            margin: 4px 2px !important;
+            cursor: pointer !important;
+            border-radius: 8px !important;
+        }
+
+        .download-btn:hover {
+            background-color: #45a049 !important;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: black !important;
+            border-top: 1px solid #333 !important;
+            text-align: center !important;
+            padding: 1.5rem !important;
+            position: relative !important;
+        }
+
+        footer p {
+            color: white !important;
+            margin-bottom: 0.5rem !important;
+        }
+
+        footer a img {
+            filter: brightness(0) invert(1) !important;
+            height: 30px !important;
+            width: auto !important;
+            transition: opacity 0.3s ease, transform 0.3s ease !important;
+        }
+
+        footer a:hover img {
+            opacity: 0.8 !important;
+            transform: translateY(-5px) !important;
+        }
+    </style>
 </head>
 <body>
-    <!-- Placeholder content for About page -->
+    <nav>
+        <div class="logo">
+            <img src="assets/prismlogo.png" alt="PRISM Logo">
+        </div>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#">Technology ▼</a>
+                <ul class="dropdown-content">
+                    <li><a href="specifications.html">Specifications</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Documentation ▼</a>
+                <ul class="dropdown-content">
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">About ▼</a>
+                <ul class="dropdown-content">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="sponsorship.html">Sponsorship</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <span style="margin-right: 15px;"></span>
+
+    <h1>Specifications</h1>
+
+    <table>
+        <tr>
+            <th>Specification</th>
+            <th>Target</th>
+        </tr>
+        <tr>
+            <td>Input Channels</td>
+            <td>48 (Expandable)</td>
+        </tr>
+        <tr>
+            <td>Mic Preamps</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>Line Inputs</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>Stereo Returns</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>AUX Sends</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>Sub Groups</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Outputs</td>
+            <td>Stereo + Monitor</td>
+        </tr>
+        <tr>
+            <td>Sample Rates</td>
+            <td>44.1-192 kHz</td>
+        </tr>
+        <tr>
+            <td>Bit Depth</td>
+            <td>48 Bit (Max) - 24 Bit</td>
+        </tr>
+        <tr>
+            <td>Digital Interface</td>
+            <td>Optical + USB</td>
+        </tr>
+    </table>
+
+    <h2>System Diagram</h2>
+    <div class="image-container">
+        <img src="assets/ChannelDiagram.drawio.png" alt="Channel Diagram">
+    </div>
+
+    <h2>Dimensions</h2>
+    <div class="pdf-container">
+        <embed src="assets/pdfs/SideOfConsole.pdf" type="application/pdf" width="800px" height="600px">
+    </div>
+
+    <div class="button-container">
+        <a href="https://github.com/KeeganIsCool0/PRISMHybridVision/blob/a698ef70b17b6469eb02825afc0a1c2817b17e84/Engineering_Docs/PRISM_Hybrid_Vision_Console.pdf" class="download-btn" target="_blank">
+            Download Full Specifications
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; SINE, All Rights Reserved.</p>
+            <a href="https://github.com/KeeganIsCool0/PRISMHybridVision" target="_blank" class="github-link">
+                <img src="assets/githublogo.png" alt="GitHub Logo" class="github-logo">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
