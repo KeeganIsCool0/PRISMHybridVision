@@ -114,7 +114,7 @@ This project sends PCM through PipeWire. It does **not** create Dolby Atmos ADM 
 
 ### Build
 
-Build with Rust:
+Build with Cargo:
 
 ```sh
 cargo build
