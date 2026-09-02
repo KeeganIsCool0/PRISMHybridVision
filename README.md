@@ -114,34 +114,13 @@ This project sends PCM through PipeWire. It does **not** create Dolby Atmos ADM 
 
 ### Build
 
-Fedora/RHEL:
+Build Both the C++ and Rust wrapper:
+`cargo build`
 
-```sh
-sudo dnf install cmake gcc-c++ pipewire-devel
-cmake -S . -B build
-cmake --build build
-ctest --test-dir build --output-on-failure
-```
+`cargo run`
+Or directly run the built executable:
 
-Run it within a logged-in PipeWire session:
-
-```sh
-./build/atmos-panner
-```
-
-The source is currently a 440 Hz reference tone. Replace the tone generator in `PipeWireOutput.cpp` with decoded input audio (or add an input stream) for program material.
-
-### Producer controls
-
-At the spatial-panning prompt:
-
-```text
-pos <azimuth> <elevation> <distance>
-spread <degrees>
-trim <channel 0-16> <dB>
-room <channel 0-16> <low-shelf dB> <high-shelf dB>
-quit
-```
+`./target/debug/prism-hybrid-vision`
 
 Azimuth is -180° (rear left) to +180° (rear right); elevation is -30° to +90°. Channel indices follow the displayed `FL, FC, FR, WL, WR, SL, SR, BL, BR, LFE1, LFE2, TFL, TFR, TML, TMR, TBL, TBR` order.
 
