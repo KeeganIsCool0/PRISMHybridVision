@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/kvitale/Documents/PRISMHybridVision/Firmware/build/_deps/glad-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

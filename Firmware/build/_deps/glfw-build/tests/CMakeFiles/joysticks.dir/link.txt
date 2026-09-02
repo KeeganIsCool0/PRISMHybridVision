@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/joysticks.dir/link.d CMakeFiles/joysticks.dir/joysticks.c.o CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o -o joysticks  ../src/libglfw3.a -lm /usr/lib64/librt.a -lm -ldl /usr/lib64/libX11.so

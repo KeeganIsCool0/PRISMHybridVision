@@ -1,0 +1,172 @@
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Using X11 for window creation
+-- Configuring done (1.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/kvitale/Documents/PRISMHybridVision/Firmware/build
+[  1%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/context.c.o
+[  2%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/init.c.o
+[  2%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/input.c.o
+[  3%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/monitor.c.o
+[  4%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/vulkan.c.o
+[  5%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/window.c.o
+[  5%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/x11_init.c.o
+[  6%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/x11_monitor.c.o
+[  7%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/x11_window.c.o
+[  8%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/xkb_unicode.c.o
+[  8%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/posix_time.c.o
+[  9%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/posix_thread.c.o
+[ 10%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/glx_context.c.o
+[ 11%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/egl_context.c.o
+[ 11%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/osmesa_context.c.o
+[ 12%] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/linux_joystick.c.o
+[ 13%] Linking C static library libglfw3.a
+[ 13%] Built target glfw
+[ 14%] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/imgui.cpp.o
+[ 15%] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/imgui_draw.cpp.o
+[ 15%] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/imgui_tables.cpp.o
+[ 16%] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/imgui_widgets.cpp.o
+[ 17%] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.o
+[ 17%] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.o
+[ 18%] Linking CXX static library libimgui.a
+[ 18%] Built target imgui
+[ 19%] Generating GLAD
+[ 19%] Built target glad-generate-files
+[ 20%] Building C object _deps/glad-build/CMakeFiles/glad.dir/src/glad.c.o
+[ 20%] Linking C static library libglad.a
+[ 21%] Built target glad
+[ 21%] Building CXX object CMakeFiles/atmos-panner.dir/main.cpp.o
+[ 22%] Building CXX object CMakeFiles/atmos-panner.dir/AudioEngine.cpp.o
+[ 23%] Building CXX object CMakeFiles/atmos-panner.dir/PipeWireOutput.cpp.o
+[ 23%] Building CXX object CMakeFiles/atmos-panner.dir/UserInterface.cpp.o
+[ 24%] Linking CXX executable atmos-panner
+[ 24%] Built target atmos-panner
+[ 25%] Building C object _deps/glfw-build/examples/CMakeFiles/boing.dir/boing.c.o
+[ 26%] Building C object _deps/glfw-build/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o
+[ 26%] Linking C executable boing
+[ 26%] Built target boing
+[ 27%] Building C object _deps/glfw-build/examples/CMakeFiles/gears.dir/gears.c.o
+[ 27%] Building C object _deps/glfw-build/examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o
+[ 28%] Linking C executable gears
+[ 28%] Built target gears
+[ 28%] Building C object _deps/glfw-build/examples/CMakeFiles/heightmap.dir/heightmap.c.o
+[ 29%] Building C object _deps/glfw-build/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o
+[ 30%] Linking C executable heightmap
+[ 30%] Built target heightmap
+[ 31%] Building C object _deps/glfw-build/examples/CMakeFiles/offscreen.dir/offscreen.c.o
+[ 32%] Building C object _deps/glfw-build/examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o
+[ 33%] Linking C executable offscreen
+[ 33%] Built target offscreen
+[ 34%] Building C object _deps/glfw-build/examples/CMakeFiles/particles.dir/particles.c.o
+[ 34%] Building C object _deps/glfw-build/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o
+[ 35%] Building C object _deps/glfw-build/examples/CMakeFiles/particles.dir/__/deps/getopt.c.o
+[ 36%] Building C object _deps/glfw-build/examples/CMakeFiles/particles.dir/__/deps/glad_gl.c.o
+[ 37%] Linking C executable particles
+[ 37%] Built target particles
+[ 38%] Building C object _deps/glfw-build/examples/CMakeFiles/sharing.dir/sharing.c.o
+[ 38%] Building C object _deps/glfw-build/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o
+[ 39%] Linking C executable sharing
+[ 39%] Built target sharing
+[ 40%] Building C object _deps/glfw-build/examples/CMakeFiles/simple.dir/simple.c.o
+[ 41%] Building C object _deps/glfw-build/examples/CMakeFiles/simple.dir/__/deps/glad_gl.c.o
+[ 41%] Linking C executable simple
+[ 41%] Built target simple
+[ 42%] Building C object _deps/glfw-build/examples/CMakeFiles/splitview.dir/splitview.c.o
+[ 43%] Building C object _deps/glfw-build/examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.o
+[ 44%] Linking C executable splitview
+[ 44%] Built target splitview
+[ 45%] Building C object _deps/glfw-build/examples/CMakeFiles/wave.dir/wave.c.o
+[ 46%] Building C object _deps/glfw-build/examples/CMakeFiles/wave.dir/__/deps/glad_gl.c.o
+[ 47%] Linking C executable wave
+[ 47%] Built target wave
+[ 48%] Building C object _deps/glfw-build/tests/CMakeFiles/clipboard.dir/clipboard.c.o
+[ 49%] Building C object _deps/glfw-build/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o
+[ 50%] Building C object _deps/glfw-build/tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o
+[ 50%] Linking C executable clipboard
+[ 50%] Built target clipboard
+[ 50%] Building C object _deps/glfw-build/tests/CMakeFiles/events.dir/events.c.o
+[ 51%] Building C object _deps/glfw-build/tests/CMakeFiles/events.dir/__/deps/getopt.c.o
+[ 52%] Building C object _deps/glfw-build/tests/CMakeFiles/events.dir/__/deps/glad_gl.c.o
+[ 53%] Linking C executable events
+[ 53%] Built target events
+[ 54%] Building C object _deps/glfw-build/tests/CMakeFiles/msaa.dir/msaa.c.o
+[ 55%] Building C object _deps/glfw-build/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o
+[ 56%] Building C object _deps/glfw-build/tests/CMakeFiles/msaa.dir/__/deps/glad_gl.c.o
+[ 56%] Linking C executable msaa
+[ 56%] Built target msaa
+[ 57%] Building C object _deps/glfw-build/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o
+[ 57%] Building C object _deps/glfw-build/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o
+[ 58%] Building C object _deps/glfw-build/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o
+[ 59%] Building C object _deps/glfw-build/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o
+[ 60%] Linking C executable glfwinfo
+[ 60%] Built target glfwinfo
+[ 61%] Building C object _deps/glfw-build/tests/CMakeFiles/iconify.dir/iconify.c.o
+[ 62%] Building C object _deps/glfw-build/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o
+[ 62%] Building C object _deps/glfw-build/tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.o
+[ 63%] Linking C executable iconify
+[ 63%] Built target iconify
+[ 64%] Building C object _deps/glfw-build/tests/CMakeFiles/monitors.dir/monitors.c.o
+[ 65%] Building C object _deps/glfw-build/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o
+[ 66%] Building C object _deps/glfw-build/tests/CMakeFiles/monitors.dir/__/deps/glad_gl.c.o
+[ 66%] Linking C executable monitors
+[ 66%] Built target monitors
+[ 66%] Building C object _deps/glfw-build/tests/CMakeFiles/reopen.dir/reopen.c.o
+[ 67%] Building C object _deps/glfw-build/tests/CMakeFiles/reopen.dir/__/deps/glad_gl.c.o
+[ 68%] Linking C executable reopen
+[ 68%] Built target reopen
+[ 69%] Building C object _deps/glfw-build/tests/CMakeFiles/cursor.dir/cursor.c.o
+[ 70%] Building C object _deps/glfw-build/tests/CMakeFiles/cursor.dir/__/deps/glad_gl.c.o
+[ 71%] Linking C executable cursor
+[ 71%] Built target cursor
+[ 71%] Building C object _deps/glfw-build/tests/CMakeFiles/empty.dir/empty.c.o
+[ 72%] Building C object _deps/glfw-build/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o
+[ 73%] Building C object _deps/glfw-build/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.o
+[ 74%] Linking C executable empty
+[ 74%] Built target empty
+[ 74%] Building C object _deps/glfw-build/tests/CMakeFiles/gamma.dir/gamma.c.o
+[ 75%] Building C object _deps/glfw-build/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o
+[ 76%] Linking C executable gamma
+[ 76%] Built target gamma
+[ 77%] Building C object _deps/glfw-build/tests/CMakeFiles/icon.dir/icon.c.o
+[ 77%] Building C object _deps/glfw-build/tests/CMakeFiles/icon.dir/__/deps/glad_gl.c.o
+[ 78%] Linking C executable icon
+[ 78%] Built target icon
+[ 79%] Building C object _deps/glfw-build/tests/CMakeFiles/inputlag.dir/inputlag.c.o
+[ 80%] Building C object _deps/glfw-build/tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o
+[ 80%] Building C object _deps/glfw-build/tests/CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o
+[ 81%] Linking C executable inputlag
+[ 81%] Built target inputlag
+[ 82%] Building C object _deps/glfw-build/tests/CMakeFiles/joysticks.dir/joysticks.c.o
+[ 83%] Building C object _deps/glfw-build/tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o
+[ 83%] Linking C executable joysticks
+[ 83%] Built target joysticks
+[ 83%] Building C object _deps/glfw-build/tests/CMakeFiles/opacity.dir/opacity.c.o
+[ 84%] Building C object _deps/glfw-build/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.o
+[ 85%] Linking C executable opacity
+[ 85%] Built target opacity
+[ 85%] Building C object _deps/glfw-build/tests/CMakeFiles/tearing.dir/tearing.c.o
+[ 86%] Building C object _deps/glfw-build/tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.o
+[ 87%] Linking C executable tearing
+[ 87%] Built target tearing
+[ 88%] Building C object _deps/glfw-build/tests/CMakeFiles/threads.dir/threads.c.o
+[ 88%] Building C object _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o
+[ 89%] Building C object _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o
+[ 90%] Linking C executable threads
+[ 90%] Built target threads
+[ 91%] Building C object _deps/glfw-build/tests/CMakeFiles/timeout.dir/timeout.c.o
+[ 91%] Building C object _deps/glfw-build/tests/CMakeFiles/timeout.dir/__/deps/glad_gl.c.o
+[ 92%] Linking C executable timeout
+[ 92%] Built target timeout
+[ 93%] Building C object _deps/glfw-build/tests/CMakeFiles/title.dir/title.c.o
+[ 94%] Building C object _deps/glfw-build/tests/CMakeFiles/title.dir/__/deps/glad_gl.c.o
+[ 94%] Linking C executable title
+[ 94%] Built target title
+[ 95%] Building C object _deps/glfw-build/tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o
+[ 96%] Building C object _deps/glfw-build/tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o
+[ 97%] Linking C executable triangle-vulkan
+[ 97%] Built target triangle-vulkan
+[ 97%] Building C object _deps/glfw-build/tests/CMakeFiles/windows.dir/windows.c.o
+[ 98%] Building C object _deps/glfw-build/tests/CMakeFiles/windows.dir/__/deps/getopt.c.o
+[ 99%] Building C object _deps/glfw-build/tests/CMakeFiles/windows.dir/__/deps/glad_gl.c.o
+[100%] Linking C executable windows
+[100%] Built target windows
+cargo:rustc-env=ATMOS_PANNER_EXE=Firmware/build/atmos-panner

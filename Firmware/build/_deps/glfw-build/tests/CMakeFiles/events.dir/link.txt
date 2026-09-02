@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/events.dir/link.d CMakeFiles/events.dir/events.c.o CMakeFiles/events.dir/__/deps/getopt.c.o CMakeFiles/events.dir/__/deps/glad_gl.c.o -o events  ../src/libglfw3.a -lm /usr/lib64/librt.a -lm -ldl /usr/lib64/libX11.so

@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/kvitale/Documents/PRISMHybridVision/Firmware/build/cmake_install.cmake",
+		"/home/kvitale/Documents/PRISMHybridVision/Firmware/build/_deps/glfw-build/cmake_install.cmake",
+		"/home/kvitale/Documents/PRISMHybridVision/Firmware/build/_deps/glfw-build/src/cmake_install.cmake",
+		"/home/kvitale/Documents/PRISMHybridVision/Firmware/build/_deps/glfw-build/examples/cmake_install.cmake",
+		"/home/kvitale/Documents/PRISMHybridVision/Firmware/build/_deps/glfw-build/tests/cmake_install.cmake",
+		"/home/kvitale/Documents/PRISMHybridVision/Firmware/build/_deps/glad-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

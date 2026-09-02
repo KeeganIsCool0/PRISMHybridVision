@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/monitors.dir/link.d CMakeFiles/monitors.dir/monitors.c.o CMakeFiles/monitors.dir/__/deps/getopt.c.o CMakeFiles/monitors.dir/__/deps/glad_gl.c.o -o monitors  ../src/libglfw3.a -lm /usr/lib64/librt.a -lm -ldl /usr/lib64/libX11.so

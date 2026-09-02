@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/tearing.dir/link.d CMakeFiles/tearing.dir/tearing.c.o CMakeFiles/tearing.dir/__/deps/glad_gl.c.o -o tearing  ../src/libglfw3.a -lm /usr/lib64/librt.a -lm -ldl /usr/lib64/libX11.so

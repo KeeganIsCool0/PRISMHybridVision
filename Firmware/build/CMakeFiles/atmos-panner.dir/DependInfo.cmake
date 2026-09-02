@@ -1,0 +1,27 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/kvitale/Documents/PRISMHybridVision/Firmware/AudioEngine.cpp" "CMakeFiles/atmos-panner.dir/AudioEngine.cpp.o" "gcc" "CMakeFiles/atmos-panner.dir/AudioEngine.cpp.o.d"
+  "/home/kvitale/Documents/PRISMHybridVision/Firmware/PipeWireOutput.cpp" "CMakeFiles/atmos-panner.dir/PipeWireOutput.cpp.o" "gcc" "CMakeFiles/atmos-panner.dir/PipeWireOutput.cpp.o.d"
+  "/home/kvitale/Documents/PRISMHybridVision/Firmware/UserInterface.cpp" "CMakeFiles/atmos-panner.dir/UserInterface.cpp.o" "gcc" "CMakeFiles/atmos-panner.dir/UserInterface.cpp.o.d"
+  "/home/kvitale/Documents/PRISMHybridVision/Firmware/main.cpp" "CMakeFiles/atmos-panner.dir/main.cpp.o" "gcc" "CMakeFiles/atmos-panner.dir/main.cpp.o.d"
+  "" "atmos-panner" "gcc" "CMakeFiles/atmos-panner.dir/link.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

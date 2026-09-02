@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/glfwinfo.dir/link.d CMakeFiles/glfwinfo.dir/glfwinfo.c.o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o -o glfwinfo  ../src/libglfw3.a -lm /usr/lib64/librt.a -lm -ldl /usr/lib64/libX11.so

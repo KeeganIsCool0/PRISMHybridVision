@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/windows.dir/link.d CMakeFiles/windows.dir/windows.c.o CMakeFiles/windows.dir/__/deps/getopt.c.o CMakeFiles/windows.dir/__/deps/glad_gl.c.o -o windows  ../src/libglfw3.a -lm /usr/lib64/librt.a -lm -ldl /usr/lib64/libX11.so

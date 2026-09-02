@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/wave.dir/link.d CMakeFiles/wave.dir/wave.c.o CMakeFiles/wave.dir/__/deps/glad_gl.c.o -o wave  ../src/libglfw3.a -lm /usr/lib64/librt.a -lm -ldl /usr/lib64/libX11.so

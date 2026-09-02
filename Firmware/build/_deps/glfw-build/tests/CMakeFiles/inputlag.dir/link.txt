@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/inputlag.dir/link.d CMakeFiles/inputlag.dir/inputlag.c.o CMakeFiles/inputlag.dir/__/deps/getopt.c.o CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o -o inputlag  ../src/libglfw3.a -lm /usr/lib64/librt.a -lm -ldl /usr/lib64/libX11.so

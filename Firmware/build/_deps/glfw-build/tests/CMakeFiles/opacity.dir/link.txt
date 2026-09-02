@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/opacity.dir/link.d CMakeFiles/opacity.dir/opacity.c.o CMakeFiles/opacity.dir/__/deps/glad_gl.c.o -o opacity  ../src/libglfw3.a -lm /usr/lib64/librt.a -lm -ldl /usr/lib64/libX11.so

@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/triangle-vulkan.dir/link.d "CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o" "CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o" -o triangle-vulkan  ../src/libglfw3.a -lm /usr/lib64/librt.a -lm -ldl /usr/lib64/libX11.so

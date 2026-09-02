@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/empty.dir/link.d CMakeFiles/empty.dir/empty.c.o CMakeFiles/empty.dir/__/deps/tinycthread.c.o CMakeFiles/empty.dir/__/deps/glad_gl.c.o -o empty  ../src/libglfw3.a -lm /usr/lib64/librt.a -ldl /usr/lib64/libX11.so

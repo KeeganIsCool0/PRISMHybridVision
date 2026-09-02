@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/cursor.dir/link.d CMakeFiles/cursor.dir/cursor.c.o CMakeFiles/cursor.dir/__/deps/glad_gl.c.o -o cursor  ../src/libglfw3.a -lm /usr/lib64/librt.a -lm -ldl /usr/lib64/libX11.so
