@@ -1,0 +1,66 @@
+name: Polyglot Security Scan
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  schedule:
+    - cron: '0 0 * * 1' # Runs every Monday at midnight
+
+jobs:
+  security-scan:
+    name: Run Security Audits
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      # 1. PYTHON SECURITY (Bandit)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install Bandit
+        run: pip install bandit
+      - name: Scan Python Code
+        run: bandit -r . -x ./node_modules -ll
+
+      # 2. RUST SECURITY (cargo-audit)
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+      - name: Install cargo-audit
+        run: cargo install cargo-audit
+      - name: Scan Rust Dependencies
+        # Only runs if a Cargo.lock file exists to prevent breaking builds
+        run: |
+          if [ -f Cargo.lock ]; then
+            cargo audit
+          else
+            echo "No Cargo.lock found, skipping Rust audit."
+          fi
+
+      # 3. TYPESCRIPT/JS SECURITY (npm audit)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'node'
+      - name: Scan Node Dependencies
+        run: |
+          if [ -f package.json ]; then
+            npm audit --audit-level=high
+          else
+            echo "No package.json found, skipping npm audit."
+          fi
+
+      # 4. MULTI-LANGUAGE & IAC SECURITY (Trivy)
+      # Excellent for catching vulnerabilities in C/C++ build systems, Python requirements, and TS lockfiles
+      - name: Run Trivy File System Scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          ignore-unfixed: true
+          format: 'table'
+          exit-code: '1' # Fails the workflow if CRITICAL or HIGH vulnerabilities are found
+          severity: 'CRITICAL,HIGH'
