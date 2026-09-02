@@ -1,0 +1,53 @@
+Impedance Bridging:
+$Z_{\text{load}} \ge 10 \times Z_{\text{source}}$
+
+Thermal Noise Voltage:
+$v_n = \sqrt{4 k_B T R \Delta f}$
+
+833:1 Divider:
+$V_{\text{out}} = V_{\text{in}} \cdot \frac{R_{\text{shunt}}}{R_{\text{series}} + R_{\text{shunt}}}$
+
+Preamp Input Transformer Ratio:
+$Z_{\text{primary}} = Z_{\text{secondary}} \cdot \frac{25}{37500} = 1500 \Omega$
+
+The Opamp provides a secondary load resistance of 37.5 \Omega, which is the input impedance of the preamp. The primary load resistance is 1500 \Omega, which is the output impedance of the opamp. The transformer ratio is 25:1, which means that the voltage at the primary side is 25 times the voltage at the secondary side.
+
+Impedance Ratio Formula:
+\(\frac{Z_{\text{primary}}}{Z_{\text{secondary}}}=\left(\frac{N_{p}}{N_{s}}\right)^{2}\)
+
+Line Output Ratio:
+(\(N_p : N_s\)): 2:1 
+
+\(\text{Voltage\ Loss\ (dB)}=20\cdot \log _{10}(0.5)\approx \mathbf{-6.02}\text{\ dB}\)
+
+Op-amp stability capacitors:
+$$f_{\text{filter}} = \frac{1}{2\pi \cdot R_f \cdot C_f} = \frac{1}{2\pi \cdot (20000\,\Omega) \cdot (22 \times 10^{-12}\,\text{F})} \approx 361.7\,\text{kHz}$$
+
+The feedback resistor is set to 20k\Omega
+
+17 Channel Panning DAC-to-VCA step down divider:
+V_{\text{out}} = 5\text{V} \cdot \left( \frac{12\,\Omega}{10000\,\Omega + 12\,\Omega} \right) = 5\text{V} \cdot \left( \frac{12}{10012} \right) \approx 5.99\,\text{mV}
+
+The THAT 4305 engine alters gain a minute long scale gate metric of exacttly -6.1 mV per decibel (dB)
+
+Noise gate/ Expander circuit calculations:
+
+Knob at Minimum (0 \Omega Pot + 10k \Omega Resistor):
+\tau = 10000 \, \Omega \cdot (1 \times 10^{-6} \, \text{F}) = 0.01 \, \text{seconds}
+
+$$\text{Minimum Release} = 5 \cdot 0.01\text{s} = \mathbf{50}\text{ milliseconds}$$
+
+Knob at Maximum (50k \Omega Pot + 10k \Omega Resistor):
+\tau = 60000 \, \Omega \cdot (1 \times 10^{-6} \, \text{F}) = 0.06 \text{ seconds}
+
+$$\text{Maximum Release} = 5 \cdot 0.06\text{s} = \mathbf{300}\text{ milliseconds}$$
+
+Calculating Frequency Sweeps:
+
+Knob at max resistance (10k \Omega Pot + 1.2k \Omega Resistor):
+$$f_c = \frac{1}{2\pi \cdot (11200\,\Omega) \cdot (220 \times 10^{-9}\,\text{F})} \approx 64.5 \text{ Hz}$$
+
+Knob at min resistance (0 \Omega Pot + 1.2k \Omega Resistor):
+$$f_c = \frac{1}{2\pi \cdot (1200\,\Omega) \cdot (220 \times 10^{-9}\,\text{F})} \approx 602.8\,\text{Hz}$$
+
+
