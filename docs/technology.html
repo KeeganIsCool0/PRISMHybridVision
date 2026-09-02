@@ -1,64 +1,287 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - PRISM Hybrid Vision</title>
+
+    <title>Technology - PRISM Hybrid Vision</title>
+
     <link rel="stylesheet" href="css/styles.css">
-    <span style="margin-right: 30px;"></span>
+
     <style>
-        /* Floating card styles */
-        .floating-card {
+        /* ================================
+           TECHNOLOGY PAGE
+           ================================ */
+
+        .technology-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .technology-intro {
+            max-width: 850px;
+            margin: 0 auto 4rem;
+            text-align: center;
+        }
+
+        .technology-intro h1 {
+            color: #2c3e50;
+            font-size: 2.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .technology-intro p {
+            color: #555;
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+
+        /* Technology Cards */
+
+        .technology-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .technology-card {
             background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            padding: 2.5rem;
-            margin: 4rem auto;
-            max-width: 800px;
-            position: relative;
-            animation: floatUp 0.6s ease-out;
-            border: 1px solid #eee;
+            border: 1px solid #e5e5e5;
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.07);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .floating-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        .technology-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
         }
 
-        @keyframes floatUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .floating-card h1 {
+        .technology-card h2 {
             color: #2c3e50;
-            text-align: center;
             margin-top: 0;
-            margin-bottom: 1.5rem;
-            font-size: 2.2rem;
+            margin-bottom: 1rem;
         }
 
-        .floating-card p {
-            color: #34495e;
+        .technology-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Architecture */
+
+        .architecture-section {
+            margin-bottom: 5rem;
+        }
+
+        .architecture-section h2 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .architecture-section > p {
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            text-align: center;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .architecture-diagram {
+            background: #f5f7f9;
+            border: 1px solid #e1e5e8;
+            border-radius: 14px;
+            padding: 2.5rem;
+            overflow-x: auto;
+        }
+
+        .architecture-flow {
+            min-width: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .architecture-block {
+            width: 80%;
+            padding: 1.2rem;
+            background: white;
+            border: 1px solid #d9dde1;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 700;
+            color: #2c3e50;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+        }
+
+        .architecture-arrow {
+            font-size: 1.5rem;
+            color: #7f8c8d;
+        }
+
+        /* Modular System */
+
+        .modular-section {
+            background: #f5f7f9;
+            border-radius: 14px;
+            padding: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        .modular-section h2 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .modular-section > p {
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            text-align: center;
+            color: #555;
             line-height: 1.8;
-            font-size: 1.1rem;
-            text-align: left;
+        }
+
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 1rem;
+        }
+
+        .module {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .module h3 {
+            margin: 0 0 0.5rem;
+            color: #2c3e50;
+        }
+
+        .module p {
+            margin: 0;
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Digital Control */
+
+        .control-section {
+            margin-bottom: 5rem;
+        }
+
+        .control-section h2 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .control-section > p {
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            text-align: center;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .control-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .control-card {
+            border-left: 4px solid #2c3e50;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .control-card h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+
+        .control-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Engineering CTA */
+
+        .engineering-cta {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 14px;
+            margin-bottom: 2rem;
+        }
+
+        .engineering-cta h2 {
+            margin-bottom: 1rem;
+        }
+
+        .engineering-cta p {
+            max-width: 750px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.7;
+        }
+
+        .engineering-button {
+            display: inline-block;
+            background: white;
+            color: #2c3e50;
+            padding: 0.8rem 1.5rem;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+            .technology-container {
+                padding: 3rem 1rem;
+            }
+
+            .technology-intro h1,
+            .architecture-section h2,
+            .modular-section h2,
+            .control-section h2 {
+                font-size: 2rem;
+            }
+
+            .modular-section {
+                padding: 2rem 1rem;
+            }
         }
     </style>
 </head>
+
 <body>
+
+    <!-- Navigation -->
     <nav>
         <div class="logo">
             <img src="assets/prismlogo.png" alt="PRISM Logo">
         </div>
+
         <ul class="nav-links">
+
             <li class="dropdown">
                 <a href="#">Technology ▼</a>
                 <ul class="dropdown-content">
@@ -66,6 +289,7 @@
                     <li><a href="technology.html">Technology</a></li>
                 </ul>
             </li>
+
             <li class="dropdown">
                 <a href="#">Documentation ▼</a>
                 <ul class="dropdown-content">
@@ -73,28 +297,355 @@
                     <li><a href="roadmap.html">Roadmap</a></li>
                 </ul>
             </li>
+
             <li class="dropdown">
                 <a href="#">About ▼</a>
                 <ul class="dropdown-content">
                     <li><a href="about.html">About</a></li>
                     <li><a href="sponsorship.html">Sponsorship</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </li>
+
         </ul>
     </nav>
 
-    <div class="floating-card">
-        <h1>Technology</h1>
-        <p>The PRISM Hybrid Vision uses modular technology using uAMX so the producer doesn't have to replace the entire console.</p>
-    </div>
-    <span style="margin-right: 50px;"></span>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; SINE, All Rights Reserved.</p>
-            <a href="https://github.com/KeeganIsCool0/PRISMHybridVision" target="_blank" class="github-link">
-                <img src="assets/githublogo.png" alt="GitHub Logo" class="github-logo">
+
+    <!-- Hero -->
+    <header class="hero">
+        <h1 class="hero-text">Technology</h1>
+    </header>
+
+
+    <main class="technology-container">
+
+        <!-- Introduction -->
+        <section class="technology-intro">
+
+            <h1>Engineering the PRISM Architecture</h1>
+
+            <p>
+                PRISM Hybrid Vision combines modular analog audio processing
+                with digital control, recall, automation, and modern
+                production workflows.
+            </p>
+
+            <p>
+                The system is designed around a modular architecture so
+                individual sections can be developed, replaced, upgraded,
+                and tested without requiring the entire console to be
+                redesigned.
+            </p>
+
+        </section>
+
+
+        <!-- Core Technologies -->
+        <section class="technology-grid">
+
+            <article class="technology-card">
+
+                <h2>Hybrid Signal Path</h2>
+
+                <p>
+                    PRISM combines analog audio processing with digital
+                    control and integration. This allows the signal path
+                    to retain analog processing characteristics while
+                    providing the flexibility expected from a modern
+                    digital production system.
+                </p>
+
+            </article>
+
+
+            <article class="technology-card">
+
+                <h2>Modular Architecture</h2>
+
+                <p>
+                    The console is designed around replaceable modules.
+                    Individual processing sections can be developed,
+                    serviced, upgraded, or replaced without replacing
+                    the entire console.
+                </p>
+
+            </article>
+
+
+            <article class="technology-card">
+
+                <h2>Digital Recall</h2>
+
+                <p>
+                    Digital control allows console settings to be
+                    recalled and automated while maintaining dedicated
+                    analog processing in the audio path.
+                </p>
+
+            </article>
+
+
+            <article class="technology-card">
+
+                <h2>DAW Integration</h2>
+
+                <p>
+                    PRISM is designed to work alongside modern digital
+                    audio workstations, allowing the console to become
+                    part of a larger production and automation workflow.
+                </p>
+
+            </article>
+
+
+            <article class="technology-card">
+
+                <h2>Immersive Audio</h2>
+
+                <p>
+                    The architecture is designed with immersive production
+                    in mind, including support for large-format routing
+                    and modern surround workflows.
+                </p>
+
+            </article>
+
+
+            <article class="technology-card">
+
+                <h2>Expandable System</h2>
+
+                <p>
+                    PRISM is designed to grow with the needs of its users.
+                    Modular processing and system expansion allow future
+                    capabilities to be incorporated into the platform.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- Architecture -->
+        <section class="architecture-section">
+
+            <h2>System Architecture</h2>
+
+            <p>
+                PRISM separates the audio signal path from the control
+                architecture while allowing the two systems to work
+                together as one console.
+            </p>
+
+            <div class="architecture-diagram">
+
+                <div class="architecture-flow">
+
+                    <div class="architecture-block">
+                        INPUT / MICROPHONE
+                    </div>
+
+                    <div class="architecture-arrow">↓</div>
+
+                    <div class="architecture-block">
+                        ANALOG PREAMPLIFIER
+                    </div>
+
+                    <div class="architecture-arrow">↓</div>
+
+                    <div class="architecture-block">
+                        MODULAR ANALOG PROCESSING
+                    </div>
+
+                    <div class="architecture-arrow">↓</div>
+
+                    <div class="architecture-block">
+                        MIX BUS / ROUTING
+                    </div>
+
+                    <div class="architecture-arrow">↓</div>
+
+                    <div class="architecture-block">
+                        A/D CONVERSION
+                    </div>
+
+                    <div class="architecture-arrow">↓</div>
+
+                    <div class="architecture-block">
+                        DIGITAL CONTROL / DAW INTEGRATION
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- uAMX -->
+        <section class="modular-section">
+
+            <h2>uAMX Modular Technology</h2>
+
+            <p>
+                PRISM uses uAMX as part of its modular system architecture.
+                The goal is to make the console's processing architecture
+                adaptable while reducing the need to replace an entire
+                system when individual functionality needs to change.
+            </p>
+
+            <div class="module-grid">
+
+                <div class="module">
+                    <h3>Preamp</h3>
+                    <p>
+                        Analog microphone and line-level input processing.
+                    </p>
+                </div>
+
+                <div class="module">
+                    <h3>EQ</h3>
+                    <p>
+                        Modular equalization and tonal shaping.
+                    </p>
+                </div>
+
+                <div class="module">
+                    <h3>Compressor</h3>
+                    <p>
+                        Dynamic processing integrated into the channel path.
+                    </p>
+                </div>
+
+                <div class="module">
+                    <h3>Mix Bus</h3>
+                    <p>
+                        Routing and summing architecture for the console.
+                    </p>
+                </div>
+
+                <div class="module">
+                    <h3>Control</h3>
+                    <p>
+                        Digital control, recall, and automation systems.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Digital Control -->
+        <section class="control-section">
+
+            <h2>Digital Control</h2>
+
+            <p>
+                Digital control is used to provide modern workflow features
+                without requiring the entire audio path to become digital.
+                This allows PRISM to combine hands-on analog processing
+                with recallable and automated control.
+            </p>
+
+            <div class="control-grid">
+
+                <div class="control-card">
+
+                    <h3>Recall</h3>
+
+                    <p>
+                        Console settings can be digitally stored and
+                        recalled as part of a session.
+                    </p>
+
+                </div>
+
+
+                <div class="control-card">
+
+                    <h3>Automation</h3>
+
+                    <p>
+                        Digital control architecture allows parameters
+                        to be incorporated into automated workflows.
+                    </p>
+
+                </div>
+
+
+                <div class="control-card">
+
+                    <h3>Microcontrollers</h3>
+
+                    <p>
+                        Distributed control electronics can manage groups
+                        of channels and their associated hardware.
+                    </p>
+
+                </div>
+
+
+                <div class="control-card">
+
+                    <h3>DAW Communication</h3>
+
+                    <p>
+                        PRISM is designed to integrate its control system
+                        with modern digital production environments.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="engineering-cta">
+
+            <h2>Explore the Engineering</h2>
+
+            <p>
+                Want to go deeper into the design? Explore the technical
+                specifications, engineering documentation, and development
+                roadmap behind PRISM Hybrid Vision.
+            </p>
+
+            <a href="documentation.html" class="engineering-button">
+                View Documentation
             </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <p>&copy; SINE, All Rights Reserved.</p>
+
+            <a
+                href="https://github.com/KeeganIsCool0/PRISMHybridVision"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link">
+
+                <img
+                    src="assets/githublogo.png"
+                    alt="GitHub Logo"
+                    class="github-logo">
+
+            </a>
+
         </div>
+
     </footer>
+
 </body>
 </html>
+```

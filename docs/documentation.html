@@ -1,17 +1,254 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Documentation - PRISM Hybrid Vision</title>
+
     <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        /* ================================
+           DOCUMENTATION PAGE
+           ================================ */
+
+        .documentation-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .documentation-intro {
+            max-width: 850px;
+            margin: 0 auto 4rem;
+            text-align: center;
+        }
+
+        .documentation-intro h1 {
+            color: #2c3e50;
+            font-size: 2.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .documentation-intro p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Documentation Categories */
+
+        .documentation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .documentation-card {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .documentation-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        .documentation-card h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .documentation-card p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+        }
+
+        .documentation-card ul {
+            padding-left: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Engineering Documentation */
+
+        .engineering-section {
+            margin-bottom: 5rem;
+        }
+
+        .engineering-section h2 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .engineering-section > p {
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            text-align: center;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .engineering-list {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .engineering-item {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            padding: 1.3rem 1.5rem;
+            background: #f7f8fa;
+            border: 1px solid #e1e4e8;
+            border-radius: 10px;
+        }
+
+        .engineering-item h3 {
+            margin: 0 0 0.3rem;
+            color: #2c3e50;
+        }
+
+        .engineering-item p {
+            margin: 0;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .engineering-status {
+            margin-left: auto;
+            white-space: nowrap;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            padding: 0.35rem 0.7rem;
+        }
+
+        /* GitHub Section */
+
+        .github-section {
+            text-align: center;
+            background: #f5f7f9;
+            border-radius: 14px;
+            padding: 3rem 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .github-section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .github-section p {
+            max-width: 750px;
+            margin: 0 auto 1.5rem;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .github-button {
+            display: inline-block;
+            padding: 0.85rem 1.6rem;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: 700;
+            transition: opacity 0.2s ease;
+        }
+
+        .github-button:hover {
+            opacity: 0.85;
+        }
+
+        /* Project Status */
+
+        .status-section {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .status-section h2 {
+            color: #2c3e50;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .status-card {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+
+        .status-card strong {
+            display: block;
+            color: #2c3e50;
+            margin-bottom: 0.4rem;
+        }
+
+        .status-card span {
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 700px) {
+            .documentation-container {
+                padding: 3rem 1rem;
+            }
+
+            .documentation-intro h1 {
+                font-size: 2rem;
+            }
+
+            .engineering-item {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .engineering-status {
+                margin-left: 0;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
+    <!-- Navigation -->
     <nav>
         <div class="logo">
             <img src="assets/prismlogo.png" alt="PRISM Logo">
         </div>
+
         <ul class="nav-links">
+
             <li class="dropdown">
                 <a href="#">Technology ▼</a>
                 <ul class="dropdown-content">
@@ -19,6 +256,7 @@
                     <li><a href="technology.html">Technology</a></li>
                 </ul>
             </li>
+
             <li class="dropdown">
                 <a href="#">Documentation ▼</a>
                 <ul class="dropdown-content">
@@ -26,27 +264,357 @@
                     <li><a href="roadmap.html">Roadmap</a></li>
                 </ul>
             </li>
+
             <li class="dropdown">
                 <a href="#">About ▼</a>
                 <ul class="dropdown-content">
                     <li><a href="about.html">About</a></li>
                     <li><a href="sponsorship.html">Sponsorship</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </li>
+
         </ul>
     </nav>
-    <div class="page-content">
-        <h1>PRISM Hybrid Vision Documentation</h1>
-        <p></p>
-        <a href="https://github.com/KeeganIsCool0/PRISMHybridVision" class="btn btn-primary">Download Full Documentation</a>
-    </div>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; SINE, All Rights Reserved.</p>
-            <a href="https://github.com/KeeganIsCool0/PRISMHybridVision" target="_blank" class="github-link">
-                <img src="assets/githublogo.png" alt="GitHub Logo" class="github-logo">
+
+
+    <!-- Hero -->
+    <header class="hero">
+        <h1 class="hero-text">Documentation</h1>
+    </header>
+
+
+    <main class="documentation-container">
+
+        <!-- Introduction -->
+        <section class="documentation-intro">
+
+            <h1>PRISM Engineering Documentation</h1>
+
+            <p>
+                Explore the engineering work behind PRISM Hybrid Vision,
+                including system architecture, electronics, signal
+                processing, digital control, mechanical design, testing,
+                and development planning.
+            </p>
+
+            <p>
+                The documentation is continuously updated as the project
+                progresses from design and simulation toward physical
+                prototypes.
+            </p>
+
+        </section>
+
+
+        <!-- Documentation Categories -->
+        <section class="documentation-grid">
+
+            <article class="documentation-card">
+
+                <h2>System Architecture</h2>
+
+                <p>
+                    High-level documentation describing how the major
+                    subsystems of PRISM work together.
+                </p>
+
+                <ul>
+                    <li>System architecture</li>
+                    <li>Signal flow</li>
+                    <li>Modular architecture</li>
+                    <li>Routing architecture</li>
+                </ul>
+
+            </article>
+
+
+            <article class="documentation-card">
+
+                <h2>Audio Electronics</h2>
+
+                <p>
+                    Documentation covering the analog audio circuitry
+                    used throughout the console.
+                </p>
+
+                <ul>
+                    <li>Mic preamp</li>
+                    <li>EQ architecture</li>
+                    <li>Compressor design</li>
+                    <li>Mix bus</li>
+                    <li>Output stages</li>
+                </ul>
+
+            </article>
+
+
+            <article class="documentation-card">
+
+                <h2>Digital Control</h2>
+
+                <p>
+                    Documentation covering the digital systems responsible
+                    for control, recall, automation, and communication.
+                </p>
+
+                <ul>
+                    <li>Microcontroller architecture</li>
+                    <li>Digital control</li>
+                    <li>Parameter recall</li>
+                    <li>DAW integration</li>
+                </ul>
+
+            </article>
+
+
+            <article class="documentation-card">
+
+                <h2>Hardware & CAD</h2>
+
+                <p>
+                    Mechanical and physical design documentation for the
+                    console and its modular hardware.
+                </p>
+
+                <ul>
+                    <li>2D CAD</li>
+                    <li>PCB design</li>
+                    <li>Module design</li>
+                    <li>Backplane architecture</li>
+                </ul>
+
+            </article>
+
+
+            <article class="documentation-card">
+
+                <h2>Simulation & Testing</h2>
+
+                <p>
+                    Engineering validation used to evaluate the design
+                    before and during physical prototyping.
+                </p>
+
+                <ul>
+                    <li>Circuit simulation</li>
+                    <li>Test plans</li>
+                    <li>Performance measurements</li>
+                    <li>Pass/fail criteria</li>
+                </ul>
+
+            </article>
+
+
+            <article class="documentation-card">
+
+                <h2>Development</h2>
+
+                <p>
+                    Project planning and development information showing
+                    how PRISM is progressing toward a working console.
+                </p>
+
+                <ul>
+                    <li>Development roadmap</li>
+                    <li>Prototype planning</li>
+                    <li>Engineering milestones</li>
+                    <li>Project updates</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+
+        <!-- Engineering Documents -->
+        <section class="engineering-section">
+
+            <h2>Engineering Documents</h2>
+
+            <p>
+                The PRISM repository contains the project's engineering
+                documentation and design files. Individual documents can
+                be added here as they are finalized.
+            </p>
+
+            <div class="engineering-list">
+
+                <div class="engineering-item">
+
+                    <div>
+                        <h3>System Architecture</h3>
+                        <p>
+                            High-level overview of the PRISM system and
+                            subsystem relationships.
+                        </p>
+                    </div>
+
+                    <span class="engineering-status">
+                        DOCUMENTED
+                    </span>
+
+                </div>
+
+
+                <div class="engineering-item">
+
+                    <div>
+                        <h3>Technical Specifications</h3>
+                        <p>
+                            Hardware, audio, connectivity, and system
+                            specifications.
+                        </p>
+                    </div>
+
+                    <span class="engineering-status">
+                        DOCUMENTED
+                    </span>
+
+                </div>
+
+
+                <div class="engineering-item">
+
+                    <div>
+                        <h3>Channel Strip Design</h3>
+                        <p>
+                            Architecture of the modular PRISM channel
+                            processing system.
+                        </p>
+                    </div>
+
+                    <span class="engineering-status">
+                        DOCUMENTED
+                    </span>
+
+                </div>
+
+
+                <div class="engineering-item">
+
+                    <div>
+                        <h3>Digital Control & Recall</h3>
+                        <p>
+                            Digital control architecture and recall
+                            functionality.
+                        </p>
+                    </div>
+
+                    <span class="engineering-status">
+                        DOCUMENTED
+                    </span>
+
+                </div>
+
+
+                <div class="engineering-item">
+
+                    <div>
+                        <h3>Test Plan</h3>
+                        <p>
+                            Planned procedures, measurements, and
+                            validation criteria for the hardware.
+                        </p>
+                    </div>
+
+                    <span class="engineering-status">
+                        DOCUMENTED
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Project Status -->
+        <section class="status-section">
+
+            <h2>Documentation Status</h2>
+
+            <div class="status-grid">
+
+                <div class="status-card">
+                    <strong>Architecture</strong>
+                    <span>Documented</span>
+                </div>
+
+                <div class="status-card">
+                    <strong>Specifications</strong>
+                    <span>Documented</span>
+                </div>
+
+                <div class="status-card">
+                    <strong>Electronics</strong>
+                    <span>In Development</span>
+                </div>
+
+                <div class="status-card">
+                    <strong>CAD</strong>
+                    <span>In Development</span>
+                </div>
+
+                <div class="status-card">
+                    <strong>Prototype</strong>
+                    <span>Planned</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GitHub -->
+        <section class="github-section">
+
+            <h2>Explore the Full Repository</h2>
+
+            <p>
+                PRISM is developed and documented openly through its
+                GitHub repository. Explore the source files, engineering
+                documents, design history, and ongoing development.
+            </p>
+
+            <a
+                href="https://github.com/KeeganIsCool0/PRISMHybridVision"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-button">
+
+                Open PRISM on GitHub
             </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <p>&copy; SINE, All Rights Reserved.</p>
+
+            <a
+                href="https://github.com/KeeganIsCool0/PRISMHybridVision"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link">
+
+                <img
+                    src="assets/githublogo.png"
+                    alt="GitHub Logo"
+                    class="github-logo">
+
+            </a>
+
         </div>
+
     </footer>
+
 </body>
 </html>
+```

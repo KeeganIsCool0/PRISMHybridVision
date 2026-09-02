@@ -51,6 +51,52 @@
             font-size: 1.1rem;
             text-align: left;
         }
+    /* Carousel Styles */
+        .carousel-container {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            will-change: transform;
+        }
+        .carousel-slide {
+            min-width: 100%;
+            flex-shrink: 0;
+            padding: 1rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .carousel-content {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 2rem;
+            margin: 0 1rem;
+        }
+        .carousel-content h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .carousel-content p {
+            color: #34495e;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        @media (max-width: 768px) {
+            .carousel-content {
+                margin: 0 0.5rem;
+                padding: 1.5rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .carousel-content {
+                margin: 0 0.25rem;
+                padding: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -78,6 +124,7 @@
                 <ul class="dropdown-content">
                     <li><a href="about.html">About</a></li>
                     <li><a href="sponsorship.html">Sponsorship</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </li>
         </ul>
@@ -87,6 +134,43 @@
         <h1>About</h1>
         <p>The PRISM Hybrid Vision is a hybrid digital/analog immersive sound mixing and mastering console. The console is designed for DAW workflows and professional studio use. The console also has a modular architecture, so you can replace modules with new ones without replacing the entire console. The console also has full DAW automation without compromising on true analog sound. The console also has switchable preamp, conversion, and output styles. It can select from OLD, OLD-NEW, and NEW. Each channel has a 5 band and 10 band EQ, the 5 band is for broader selection of frequencies, the 10 band has a more sophisticated selection of frequencies to choose from. There are two compressors per channel. One VCA and one Opto compressor chained together. These two compressors create the best duo per channel for excellent sound. Each channel comes with 3 Stereo AUX sends. Each channel also comes with MUTE, SOLO, RECORD, and CUT buttons, which are fully automated from the center console.</p>
     </div>
+
+    <!-- Infinite Scrolling Carousel -->
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <h3>Innovative Hybrid Design</h3>
+                    <p>Combining the warmth of analog circuitry with the precision of digital processing, PRISM offers the best of both worlds for modern audio production.</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <h3>Modular Architecture</h3>
+                    <p>Easily upgrade and customize your console with interchangeable modules, ensuring your investment stays relevant for years to come.</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <h3>Professional Grade Components</h3>
+                    <p>Built with high-quality components selected for superior audio performance and reliability in demanding studio environments.</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <h3>Intuitive Workflow</h3>
+                    <p>Designed for seamless integration into existing DAW workflows with comprehensive automation and recall capabilities.</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <h3>Versatile Signal Routing</h3>
+                    <p>Flexible routing options allow for creative signal processing and complex mixing configurations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <span style="margin-right: 50px;"></span>
     <footer>
         <div class="footer-content">

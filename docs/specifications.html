@@ -1,181 +1,23 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specifications - PRISM Hybrid Vision</title>
+
+    <title>PRISM | Specifications</title>
+
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        /* Override styles for black theme - using more specific selectors */
-        body {
-            background-color: black !important;
-            color: white !important;
-            font-family: 'Courier New', monospace !important;
-        }
-
-        /* Override navbar styles */
-        nav {
-            background-color: black !important;
-            border-bottom: 1px solid #333 !important;
-            box-shadow: none !important;
-        }
-
-        .logo {
-            margin-right: 2rem !important;
-        }
-
-        .logo img {
-            filter: brightness(0) invert(1) !important;
-            height: 40px !important;
-            width: auto !important;
-        }
-
-        .nav-links {
-            gap: 2rem !important;
-            justify-content: center !important;
-        }
-
-        .nav-links li {
-            position: relative !important;
-        }
-
-        .nav-links a {
-            color: white !important;
-            text-decoration: none !important;
-            padding: 0.5rem 0 !important;
-            font-size: 1.1rem !important;
-            transition: color 0.3s ease !important;
-        }
-
-        .nav-links a:hover {
-            color: #ff6b6b !important;
-        }
-
-        /* Override dropdown menus */
-        .dropdown-content {
-            display: none !important;
-            position: absolute !important;
-            background-color: black !important;
-            min-width: 200px !important;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) !important;
-            z-index: 1000 !important;
-            padding: 0.5rem 0 !important;
-            border-radius: 4px !important;
-            top: 100% !important;
-            left: 0 !important;
-            border: 1px solid #333 !important;
-        }
-
-        .dropdown-content li {
-            padding: 0.5rem 1.5rem !important;
-        }
-
-        .dropdown-content a {
-            color: white !important;
-            text-decoration: none !important;
-            display: block !important;
-            width: 100% !important;
-            padding: 0.5rem 0 !important;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #333 !important;
-            border-radius: 2px !important;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block !important;
-        }
-
-        /* Ensure content is visible */
-        h1, h2 {
-            color: white !important;
-            text-align: center !important;
-        }
-
-        /* Table styles */
-        table {
-            width: 80% !important;
-            margin: 20px auto !important;
-            border-collapse: collapse !important;
-        }
-
-        th, td {
-            border: 1px solid white !important;
-            padding: 12px !important;
-            text-align: left !important;
-        }
-
-        th {
-            background-color: rgba(255, 255, 255, 0.1) !important;
-        }
-
-        .image-container, .pdf-container {
-            text-align: center !important;
-            margin: 30px 0 !important;
-        }
-
-        img, embed {
-            max-width: 100% !important;
-            height: auto !important;
-            border: 1px solid white !important;
-        }
-
-        .button-container {
-            text-align: center !important;
-            margin: 30px 0 !important;
-        }
-
-        .download-btn {
-            background-color: #4CAF50 !important;
-            border: none !important;
-            color: white !important;
-            padding: 15px 32px 32px !important;
-            text-align: center !important;
-            text-decoration: none !important;
-            display: inline-block !important;
-            font-size: 16px !important;
-            margin: 4px 2px !important;
-            cursor: pointer !important;
-            border-radius: 8px !important;
-        }
-
-        .download-btn:hover {
-            background-color: #45a049 !important;
-        }
-
-        /* Footer styles */
-        footer {
-            background-color: black !important;
-            border-top: 1px solid #333 !important;
-            text-align: center !important;
-            padding: 1.5rem !important;
-            position: relative !important;
-        }
-
-        footer p {
-            color: white !important;
-            margin-bottom: 0.5rem !important;
-        }
-
-        footer a img {
-            filter: brightness(0) invert(1) !important;
-            height: 30px !important;
-            width: auto !important;
-            transition: opacity 0.3s ease, transform 0.3s ease !important;
-        }
-
-        footer a:hover img {
-            opacity: 0.8 !important;
-            transform: translateY(-5px) !important;
-        }
-    </style>
 </head>
+
 <body>
+
+    <!-- Navigation -->
     <nav>
         <div class="logo">
             <img src="assets/prismlogo.png" alt="PRISM Logo">
         </div>
+
         <ul class="nav-links">
             <li class="dropdown">
                 <a href="#">Technology ▼</a>
@@ -184,6 +26,7 @@
                     <li><a href="technology.html">Technology</a></li>
                 </ul>
             </li>
+
             <li class="dropdown">
                 <a href="#">Documentation ▼</a>
                 <ul class="dropdown-content">
@@ -191,6 +34,7 @@
                     <li><a href="roadmap.html">Roadmap</a></li>
                 </ul>
             </li>
+
             <li class="dropdown">
                 <a href="#">About ▼</a>
                 <ul class="dropdown-content">
@@ -200,80 +44,479 @@
             </li>
         </ul>
     </nav>
-    <span style="margin-right: 15px;"></span>
 
-    <h1>Specifications</h1>
 
-    <table>
-        <tr>
-            <th>Specification</th>
-            <th>Target</th>
-        </tr>
-        <tr>
-            <td>Input Channels</td>
-            <td>48 (Expandable)</td>
-        </tr>
-        <tr>
-            <td>Mic Preamps</td>
-            <td>48</td>
-        </tr>
-        <tr>
-            <td>Line Inputs</td>
-            <td>48</td>
-        </tr>
-        <tr>
-            <td>Stereo Returns</td>
-            <td>16</td>
-        </tr>
-        <tr>
-            <td>AUX Sends</td>
-            <td>16</td>
-        </tr>
-        <tr>
-            <td>Sub Groups</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td>Outputs</td>
-            <td>Stereo + Monitor</td>
-        </tr>
-        <tr>
-            <td>Sample Rates</td>
-            <td>44.1-192 kHz</td>
-        </tr>
-        <tr>
-            <td>Bit Depth</td>
-            <td>48 Bit (Max) - 24 Bit</td>
-        </tr>
-        <tr>
-            <td>Digital Interface</td>
-            <td>Optical + USB</td>
-        </tr>
-    </table>
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">PRISM HYBRID RECORDING CONSOLE</p>
 
-    <h2>System Diagram</h2>
-    <div class="image-container">
-        <img src="assets/ChannelDiagram.drawio.png" alt="Channel Diagram">
-    </div>
+            <h1>Specifications</h1>
 
-    <h2>Dimensions</h2>
-    <div class="pdf-container">
-        <embed src="assets/pdfs/SideOfConsole.pdf" type="application/pdf" width="800px" height="600px">
-    </div>
-
-    <div class="button-container">
-        <a href="https://github.com/KeeganIsCool0/PRISMHybridVision/blob/a698ef70b17b6469eb02825afc0a1c2817b17e84/Engineering_Docs/PRISM_Hybrid_Vision_Console.pdf" class="download-btn" target="_blank">
-            Download Full Specifications
-        </a>
-    </div>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; SINE, All Rights Reserved.</p>
-            <a href="https://github.com/KeeganIsCool0/PRISMHybridVision" target="_blank" class="github-link">
-                <img src="assets/githublogo.png" alt="GitHub Logo" class="github-logo">
-            </a>
+            <p>
+                A technical overview of the PRISM hybrid analog and digital
+                recording console.
+            </p>
         </div>
+    </header>
+
+
+    <!-- Introduction -->
+    <main>
+
+        <section class="content-section">
+            <h2>System Overview</h2>
+
+            <p>
+                PRISM is a modular professional recording console designed to
+                combine the sonic characteristics of analog processing with
+                modern digital control, recall, automation, and DAW integration.
+            </p>
+
+            <div class="spec-grid">
+
+                <div class="spec-card">
+                    <span class="spec-label">Architecture</span>
+                    <strong>Hybrid Analog / Digital</strong>
+                    <p>
+                        Analog audio processing combined with digitally
+                        controlled routing, recall, and automation.
+                    </p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-label">Channel Count</span>
+                    <strong>Up to 48 Inputs</strong>
+                    <p>
+                        Designed around a scalable multi-channel architecture.
+                    </p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-label">Processing</span>
+                    <strong>Modular</strong>
+                    <p>
+                        Channel processing is divided into replaceable,
+                        configurable modules.
+                    </p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-label">Control</span>
+                    <strong>Digital Recall</strong>
+                    <p>
+                        Analog processing parameters can be digitally
+                        monitored and recalled.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Signal Architecture -->
+        <section class="content-section">
+            <h2>Signal Architecture</h2>
+
+            <p>
+                The PRISM signal path combines analog processing with
+                conversion and digital control at key points in the system.
+            </p>
+
+            <div class="signal-flow">
+                <div>INPUT</div>
+                <span>→</span>
+                <div>PREAMPLIFIER</div>
+                <span>→</span>
+                <div>ANALOG PROCESSING</div>
+                <span>→</span>
+                <div>MIX BUS</div>
+                <span>→</span>
+                <div>A/D CONVERSION</div>
+                <span>→</span>
+                <div>DIGITAL CONTROL / DAW</div>
+            </div>
+        </section>
+
+
+        <!-- Analog -->
+        <section class="content-section">
+            <h2>Analog Audio</h2>
+
+            <p>
+                The analog section is designed around modular processing
+                blocks capable of providing different tonal and technical
+                characteristics.
+            </p>
+
+            <div class="spec-table">
+
+                <div class="spec-row spec-header">
+                    <span>Component</span>
+                    <span>Specification</span>
+                </div>
+
+                <div class="spec-row">
+                    <span>Input Preamplifier</span>
+                    <span>Modular analog preamp architecture</span>
+                </div>
+
+                <div class="spec-row">
+                    <span>EQ</span>
+                    <span>Selectable 5-band / 10-band architecture</span>
+                </div>
+
+                <div class="spec-row">
+                    <span>Compressor</span>
+                    <span>Dual-mode FET / Opto</span>
+                </div>
+
+                <div class="spec-row">
+                    <span>Output Driver</span>
+                    <span>Balanced analog output architecture</span>
+                </div>
+
+                <div class="spec-row">
+                    <span>Transformer Options</span>
+                    <span>Selectable analog transformer character</span>
+                </div>
+
+                <div class="spec-row">
+                    <span>Channel Architecture</span>
+                    <span>Modular processing blocks</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Digital -->
+        <section class="content-section">
+            <h2>Digital Control</h2>
+
+            <div class="spec-grid">
+
+                <div class="spec-card">
+                    <span class="spec-label">Recall</span>
+                    <strong>Digital Parameter Recall</strong>
+                    <p>
+                        Designed to allow console settings to be stored and
+                        recalled between sessions.
+                    </p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-label">Automation</span>
+                    <strong>Automated Console Control</strong>
+                    <p>
+                        Digital control architecture supports automated
+                        channel and processing parameters.
+                    </p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-label">Microcontrollers</span>
+                    <strong>Distributed Control</strong>
+                    <p>
+                        Microcontroller-based control is distributed across
+                        the console architecture.
+                    </p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-label">DAW Integration</span>
+                    <strong>Digital Communication</strong>
+                    <p>
+                        Designed for integration with modern digital audio
+                        production workflows.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- I/O -->
+        <section class="content-section">
+            <h2>Connectivity & I/O</h2>
+
+            <div class="spec-table">
+
+                <div class="spec-row spec-header">
+                    <span>Interface</span>
+                    <span>Specification</span>
+                </div>
+
+                <div class="spec-row">
+                    <span>Analog Inputs</span>
+                    <span>Up to 48 channels</span>
+                </div>
+
+                <div class="spec-row">
+                    <span>Microphone Inputs</span>
+                    <span>Balanced XLR architecture</span>
+                </div>
+
+                <div class="spec-row">
+                    <span>Digital Audio</span>
+                    <span>MADI-based architecture</span>
+                </div>
+
+                <div class="spec-row">
+                    <span>DAW Interface</span>
+                    <span>Digital audio and control integration</span>
+                </div>
+
+                <div class="spec-row">
+                    <span>Console Outputs</span>
+                    <span>Balanced analog outputs</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Channel Strip -->
+        <section class="content-section">
+            <h2>Channel Strip</h2>
+
+            <p>
+                Each channel is designed around a modular processing chain
+                that can be expanded or modified as the PRISM platform
+                develops.
+            </p>
+
+            <div class="channel-flow">
+
+                <div class="channel-block">
+                    <span>01</span>
+                    <strong>INPUT</strong>
+                    <small>Mic / Line</small>
+                </div>
+
+                <div class="channel-arrow">→</div>
+
+                <div class="channel-block">
+                    <span>02</span>
+                    <strong>PREAMP</strong>
+                    <small>Analog Gain</small>
+                </div>
+
+                <div class="channel-arrow">→</div>
+
+                <div class="channel-block">
+                    <span>03</span>
+                    <strong>EQ</strong>
+                    <small>5 / 10 Band</small>
+                </div>
+
+                <div class="channel-arrow">→</div>
+
+                <div class="channel-block">
+                    <span>04</span>
+                    <strong>COMPRESSOR</strong>
+                    <small>FET / Opto</small>
+                </div>
+
+                <div class="channel-arrow">→</div>
+
+                <div class="channel-block">
+                    <span>05</span>
+                    <strong>ROUTING</strong>
+                    <small>Bus / Aux</small>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Mixing -->
+        <section class="content-section">
+            <h2>Mixing & Routing</h2>
+
+            <div class="spec-grid">
+
+                <div class="spec-card">
+                    <span class="spec-label">Auxiliary Sends</span>
+                    <strong>Stereo AUX</strong>
+                    <p>
+                        Auxiliary routing designed for effects,
+                        monitoring, and external processing.
+                    </p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-label">Channel Control</span>
+                    <strong>MUTE / SOLO / RECORD / CUT</strong>
+                    <p>
+                        Digitally controlled channel-state functions.
+                    </p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-label">Mix Bus</span>
+                    <strong>Analog / Hybrid</strong>
+                    <p>
+                        Dedicated mixing architecture for summing and
+                        analog processing.
+                    </p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-label">Expansion</span>
+                    <strong>Modular</strong>
+                    <p>
+                        Architecture designed to support future expansion
+                        and additional processing modules.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Immersive Audio -->
+        <section class="content-section">
+            <h2>Immersive Audio</h2>
+
+            <p>
+                PRISM is designed with immersive production in mind, including
+                workflows capable of supporting large-format multichannel
+                mixing environments.
+            </p>
+
+            <div class="spec-highlight">
+                <span>IMMERSIVE ARCHITECTURE</span>
+                <strong>9.2.6</strong>
+                <p>
+                    Designed around a Dolby Atmos-compatible immersive
+                    production workflow.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Modular Architecture -->
+        <section class="content-section">
+            <h2>Modular Architecture</h2>
+
+            <p>
+                PRISM uses a modular design philosophy to separate the audio
+                processing, control, and system infrastructure into
+                manageable functional blocks.
+            </p>
+
+            <div class="spec-grid">
+
+                <div class="spec-card">
+                    <span class="spec-label">uAMX</span>
+                    <strong>Modular Platform</strong>
+                    <p>
+                        A modular architecture for organizing interchangeable
+                        processing and control functions.
+                    </p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-label">Processing Modules</span>
+                    <strong>Replaceable</strong>
+                    <p>
+                        Individual processing sections can be developed,
+                        tested, and upgraded independently.
+                    </p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-label">Control Modules</span>
+                    <strong>Distributed</strong>
+                    <p>
+                        Dedicated control electronics can manage groups of
+                        channels and system functions.
+                    </p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-label">Expansion</span>
+                    <strong>Scalable</strong>
+                    <p>
+                        The architecture is intended to support additional
+                        channels and functionality over time.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Development Status -->
+        <section class="content-section">
+            <h2>Development Status</h2>
+
+            <div class="status-grid">
+
+                <div class="status-card">
+                    <span>Architecture</span>
+                    <strong>DOCUMENTED</strong>
+                </div>
+
+                <div class="status-card">
+                    <span>Specifications</span>
+                    <strong>DOCUMENTED</strong>
+                </div>
+
+                <div class="status-card">
+                    <span>Electronics</span>
+                    <strong>IN DEVELOPMENT</strong>
+                </div>
+
+                <div class="status-card">
+                    <span>CAD</span>
+                    <strong>IN DEVELOPMENT</strong>
+                </div>
+
+                <div class="status-card">
+                    <span>Prototype</span>
+                    <strong>PLANNED</strong>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Documentation CTA -->
+        <section class="cta-section">
+
+            <h2>Want the Engineering Details?</h2>
+
+            <p>
+                Explore the technical documentation behind the PRISM
+                architecture, including system design, electronics,
+                simulation, CAD, and testing.
+            </p>
+
+            <a href="documentation.html" class="button">
+                View Documentation
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© SINE, All Rights Reserved.</p>
+
+        <a href="https://github.com/KeeganIsCool0/PRISMHybridVision"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <img src="assets/githublogo.png"
+                 alt="GitHub"
+                 width="28">
+        </a>
     </footer>
+
 </body>
 </html>
+```

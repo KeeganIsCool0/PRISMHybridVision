@@ -1,72 +1,390 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sponsorships - PRISM Hybrid Vision</title>
+
+    <title>Sponsorship - PRISM Hybrid Vision</title>
+
     <link rel="stylesheet" href="css/styles.css">
+
     <style>
-        /* Sponsors section styles */
-        .sponsors-section {
+        /* ================================
+           SPONSORSHIP PAGE
+           ================================ */
+
+        .sponsorship-container {
             max-width: 1200px;
-            margin: 4rem auto;
-            padding: 0 2rem;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-intro {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            text-align: center;
+        }
+
+        .section-intro h2 {
+            color: #2c3e50;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-intro p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* Mission */
+
+        .mission-section {
+            max-width: 900px;
+            margin: 0 auto 5rem;
+            text-align: center;
+        }
+
+        .mission-section h2 {
+            color: #2c3e50;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .mission-section p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Funding Areas */
+
+        .funding-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+        }
+
+        .funding-card {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .funding-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+        }
+
+        .funding-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.75rem;
+        }
+
+        .funding-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Sponsorship Tiers */
+
+        .tiers-section {
+            margin-bottom: 5rem;
+        }
+
+        .tiers-section h2 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .tiers-intro {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 2.5rem;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .tiers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tier-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+        }
+
+        .tier-card h3 {
+            color: #2c3e50;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tier-amount {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #34495e;
+            margin-bottom: 1rem;
+        }
+
+        .tier-card ul {
+            padding-left: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Major Sponsor */
+
+        .founding-sponsor {
+            background: #f5f7f9;
+            border-radius: 14px;
+            padding: 3rem;
+            margin-bottom: 5rem;
+            text-align: center;
+        }
+
+        .founding-sponsor h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .founding-sponsor p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Current Sponsors */
+
+        .sponsors-section {
+            margin-bottom: 5rem;
         }
 
         .sponsors-section h2 {
             text-align: center;
             color: #2c3e50;
-            margin-bottom: 3rem;
-            font-size: 2.5rem;
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
         }
 
-        .sponsors-grid {
+        .no-sponsors {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2.5rem;
+            border: 2px dashed #ddd;
+            border-radius: 12px;
+            text-align: center;
+            color: #777;
+        }
+
+        .no-sponsors strong {
+            display: block;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Support Section */
+
+        .support-section {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .support-section h2 {
+            color: #2c3e50;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .support-section p {
+            max-width: 750px;
+            margin: 0 auto 2rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .support-options {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .support-card {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+        }
+
+        .support-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.75rem;
+        }
+
+        .support-card p {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .support-button {
+            display: inline-block;
+            padding: 0.75rem 1.4rem;
+            border-radius: 7px;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+
+        .support-button:hover {
+            opacity: 0.85;
+        }
+
+        /* Contact CTA */
+
+        .contact-cta {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 14px;
+            margin-bottom: 2rem;
+        }
+
+        .contact-cta h2 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-cta p {
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.7;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background: white;
+            color: #2c3e50;
+            padding: 0.8rem 1.6rem;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+            .sponsorship-container {
+                padding: 3rem 1.2rem;
+            }
+
+            .section-intro h2,
+            .tiers-section h2,
+            .sponsors-section h2,
+            .support-section h2 {
+                font-size: 2rem;
+            }
+
+            .founding-sponsor {
+                padding: 2rem 1.5rem;
+            }
+                 }
+
+        /* Sponsor Carousel Styles */
+        .sponsor-carousel {
+            margin: 3rem 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            will-change: transform;
+        }
+
+        .carousel-slide {
+            min-width: 200px;
+            margin: 0 1rem;
+            flex-shrink: 0;
+            text-align: center;
         }
 
         .sponsor-logo {
-            background: white;
-            border-radius: 10px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid #eee;
+            width: 150px;
+            height: 80px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            color: #666;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: 1px solid #e0e0e0;
         }
 
-        .sponsor-logo:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .carousel-slide {
+                min-width: 150px;
+                margin: 0 0.5rem;
+            }
+
+            .sponsor-logo {
+                width: 120px;
+                height: 60px;
+                font-size: 0.8rem;
+            }
         }
 
-        .sponsor-logo img {
-            max-width: 100%;
-            height: auto;
-            opacity: 0.8;
-            transition: opacity 0.3s ease;
+        @media (max-width: 480px) {
+            .carousel-slide {
+                min-width: 120px;
+                margin: 0 0.3rem;
+            }
+
+            .sponsor-logo {
+                width: 100px;
+                height: 50px;
+                font-size: 0.7rem;
+            }
         }
 
-        .sponsor-logo img:hover {
-            opacity: 1;
-        }
-
-        .sponsor-name {
-            margin-top: 1rem;
-            font-weight: 600;
-            color: #2c3e50;
-            font-size: 1.1rem;
-        }
     </style>
 </head>
+
 <body>
+
+    <!-- Navigation -->
     <nav>
         <div class="logo">
             <img src="assets/prismlogo.png" alt="PRISM Logo">
         </div>
+
         <ul class="nav-links">
+
             <li class="dropdown">
                 <a href="#">Technology ▼</a>
                 <ul class="dropdown-content">
@@ -74,6 +392,7 @@
                     <li><a href="technology.html">Technology</a></li>
                 </ul>
             </li>
+
             <li class="dropdown">
                 <a href="#">Documentation ▼</a>
                 <ul class="dropdown-content">
@@ -81,92 +400,365 @@
                     <li><a href="roadmap.html">Roadmap</a></li>
                 </ul>
             </li>
+
             <li class="dropdown">
                 <a href="#">About ▼</a>
                 <ul class="dropdown-content">
                     <li><a href="about.html">About</a></li>
                     <li><a href="sponsorship.html">Sponsorship</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </li>
+
         </ul>
     </nav>
+
+
+    <!-- Hero -->
     <header class="hero">
         <h1 class="hero-text">Sponsorship</h1>
     </header>
 
-    <section class="sponsors-section">
-        <h2>Current Sponsors</h2>
-        <div class="sponsors-grid">
-            <!-- Sponsor logos will go here -->
-            <div class="sponsor-logo">
-                <!-- Placeholder for sponsor logos - you can replace these with actual logos -->
-                <div style="width: 100px; height: 60px; background: #f0f0f0; border-radius: 5px; margin: 0 auto 1rem;"></div>
-                <div class="sponsor-name">Sponsor 1</div>
-            </div>
-            <div class="sponsor-logo">
-                <div style="width: 100px; height: 60px; background: #f0f0f0; border-radius: 5px; margin: 0 auto 1rem;"></div>
-                <div class="sponsor-name">Sponsor 2</div>
-            </div>
-            <div class="sponsor-logo">
-                <div style="width: 100px; height: 60px; background: #f0f0f0; border-radius: 5px; margin: 0 auto 1rem;"></div>
-                <div class="sponsor-name">Sponsor 3</div>
-            </div>
-            <div class="sponsor-logo">
-                <div style="width: 100px; height: 60px; background: #f0f0f0; border-radius: 5px; margin: 0 auto 1rem;"></div>
-                <div class="sponsor-name">Sponsor 4</div>
-            </div>
-        </div>
-    </section>
-    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('keeganstudio', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#00b9fe',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
-</script>
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="KeeganStudio" data-description="Support me on Buy me a coffee!" data-message="" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-    <div class="gfm-embed" data-url="https://www.gofundme.com/f/support-keegans-dream-to-change-the-world/widget/large?attribution_id=sl%3A7af9a10c-45e1-411c-a77a-cc9233b0b7a7"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Header with List</title>
-    <style>
-        /* Centers the heading text */
-        .list-header {
-            text-align: center;
-            font-family: sans-serif;
-        }
 
-        /* Container to center and format the list itself */
-        .list-container {
-            max-width: 300px;
-            margin: 0 auto; /* Centers the list block on the page */
-            font-family: sans-serif;
-        }
-    </style>
-</head>
-<body>
+    <main class="sponsorship-container">
+        <!-- Sponsor Carousel -->
+        <section class="sponsor-carousel">
+            <div class="carousel-track">
+                <div class="carousel-slide"><div class="sponsor-logo">Sponsor</div></div>
+                <div class="carousel-slide"><div class="sponsor-logo">Sponsor</div></div>
+                <div class="carousel-slide"><div class="sponsor-logo">Sponsor</div></div>
+                <div class="carousel-slide"><div class="sponsor-logo">Sponsor</div></div>
+                <div class="carousel-slide"><div class="sponsor-logo">Sponsor</div></div>
+                <div class="carousel-slide"><div class="sponsor-logo">Sponsor</div></div>
+            </div>
+        </section>
 
-    <!-- Centered Header -->
-    <h2 class="list-header">Other Sponsors</h2>
+        <!-- Introduction -->
+        <section class="section-intro">
+            <h2>Help Build PRISM</h2>
 
-    <!-- List Content -->
-    <div class="list-container">
-        <ul>
-            <li>None</li>
-        </ul>
-    </div>
-    <span style="margin-right: 30px;"></span>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; SINE, All Rights Reserved.</p>
-            <a href="https://github.com/KeeganIsCool0/PRISMHybridVision" target="_blank" class="github-link">
-                <img src="assets/githublogo.png" alt="GitHub Logo" class="github-logo">
+            <p>
+                PRISM Hybrid Vision is an independently developed hybrid
+                analog/digital recording console designed to combine the
+                character of analog audio with the flexibility of modern
+                digital production.
+            </p>
+
+            <p>
+                Sponsorship helps turn the engineering work behind PRISM
+                into physical hardware through prototyping, manufacturing,
+                testing, and continued development.
+            </p>
+        </section>
+
+
+        <!-- Mission -->
+        <section class="mission-section">
+            <h2>Where Support Goes</h2>
+
+            <p>
+                PRISM is being developed as a long-term engineering project.
+                Funding is used to move the project from schematics and
+                simulations toward functional hardware and eventually a
+                complete working console.
+            </p>
+        </section>
+
+
+        <!-- Funding Areas -->
+        <section>
+
+            <div class="funding-grid">
+
+                <div class="funding-card">
+                    <h3>Engineering</h3>
+                    <p>
+                        Electronic components, PCB fabrication,
+                        development hardware, and engineering tools.
+                    </p>
+                </div>
+
+                <div class="funding-card">
+                    <h3>Prototyping</h3>
+                    <p>
+                        Channel strips, mix buses, control systems,
+                        modules, and prototype assemblies.
+                    </p>
+                </div>
+
+                <div class="funding-card">
+                    <h3>Manufacturing</h3>
+                    <p>
+                        Mechanical fabrication, enclosure components,
+                        connectors, wiring, and assembly.
+                    </p>
+                </div>
+
+                <div class="funding-card">
+                    <h3>Testing</h3>
+                    <p>
+                        Measurement equipment, validation, audio testing,
+                        and prototype verification.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Sponsorship Tiers -->
+        <section class="tiers-section">
+
+            <h2>Sponsorship Opportunities</h2>
+
+            <p class="tiers-intro">
+                Sponsorship can take many forms. These tiers provide a
+                starting point for individuals, organizations, and companies
+                interested in helping develop PRISM.
+            </p>
+
+            <div class="tiers-grid">
+
+                <div class="tier-card">
+                    <h3>Supporter</h3>
+                    <div class="tier-amount">$100+</div>
+
+                    <ul>
+                        <li>Recognition as a PRISM supporter</li>
+                        <li>Name listed on the project website</li>
+                        <li>Supporter acknowledgment in project updates</li>
+                    </ul>
+                </div>
+
+
+                <div class="tier-card">
+                    <h3>Development Partner</h3>
+                    <div class="tier-amount">$1,000+</div>
+
+                    <ul>
+                        <li>Development Partner recognition</li>
+                        <li>Logo placement on the sponsorship page</li>
+                        <li>Recognition in major project updates</li>
+                        <li>Behind-the-scenes development updates</li>
+                    </ul>
+                </div>
+
+
+                <div class="tier-card">
+                    <h3>Technology Partner</h3>
+                    <div class="tier-amount">$5,000+</div>
+
+                    <ul>
+                        <li>Prominent project recognition</li>
+                        <li>Technology Partner designation</li>
+                        <li>Logo placement on project materials</li>
+                        <li>Direct communication regarding development</li>
+                    </ul>
+                </div>
+
+
+                <div class="tier-card">
+                    <h3>Founding Sponsor</h3>
+                    <div class="tier-amount">$20,000+</div>
+
+                    <ul>
+                        <li>Founding Sponsor recognition</li>
+                        <li>Prominent website and project recognition</li>
+                        <li>Featured sponsor placement</li>
+                        <li>Direct involvement in sponsorship discussions</li>
+                        <li>Custom partnership opportunities</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Founding Sponsor -->
+        <section class="founding-sponsor">
+
+            <h2>Become a Founding Sponsor</h2>
+
+            <p>
+                Early supporters have the opportunity to become part of
+                PRISM's development from the beginning. Founding sponsorship
+                can help accelerate prototype construction, testing, and
+                hardware development while establishing a long-term
+                relationship with the project.
+            </p>
+
+        </section>
+
+
+        <!-- Current Sponsors -->
+        <section class="sponsors-section">
+
+            <h2>Current Sponsors</h2>
+
+            <div class="no-sponsors">
+
+                <strong>No sponsors yet.</strong>
+
+                PRISM is currently seeking its first sponsors and
+                development partners.
+
+            </div>
+
+        </section>
+
+
+        <!-- Individual Support -->
+        <section class="support-section">
+
+            <h2>Not a Corporate Sponsor?</h2>
+
+            <p>
+                You can still help PRISM move forward. Individual
+                contributions help cover the smaller costs that add up
+                during hardware development.
+            </p>
+
+
+            <div class="support-options">
+
+                <div class="support-card">
+
+                    <h3>Ko-fi</h3>
+
+                    <p>
+                        Make a small contribution to support ongoing
+                        development.
+                    </p>
+
+                    <a
+                        href="https://ko-fi.com/keeganstudio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="support-button">
+                        Support on Ko-fi
+                    </a>
+
+                </div>
+
+
+                <div class="support-card">
+
+                    <h3>Buy Me a Coffee</h3>
+
+                    <p>
+                        Help support the time and resources going into
+                        the PRISM project.
+                    </p>
+
+                    <a
+                        href="https://www.buymeacoffee.com/KeeganStudio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="support-button">
+                        Support the Project
+                    </a>
+
+                </div>
+
+
+                <div class="support-card">
+
+                    <h3>GoFundMe</h3>
+
+                    <p>
+                        Larger contributions can help fund physical
+                        development and prototyping.
+                    </p>
+
+                    <a
+                        href="https://www.gofundme.com/f/support-keegans-dream-to-change-the-world"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="support-button">
+                        View Fundraiser
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact CTA -->
+        <section class="contact-cta">
+
+            <h2>Interested in Sponsoring PRISM?</h2>
+
+            <p>
+                Companies, manufacturers, engineers, organizations, and
+                individuals interested in supporting the development of
+                PRISM are encouraged to get in touch.
+            </p>
+
+            <a href="contact.html" class="contact-button">
+                Contact PRISM
             </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Ko-fi Widget -->
+    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+
+    <script>
+        kofiWidgetOverlay.draw('keeganstudio', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Support PRISM',
+            'floating-chat.donateButton.background-color': '#00b9fe',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+    </script>
+
+
+    <!-- Buy Me a Coffee Widget -->
+    <script
+        data-name="BMC-Widget"
+        data-cfasync="false"
+        src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="KeeganStudio"
+        data-description="Support the PRISM Hybrid Vision project"
+        data-message=""
+        data-color="#40DCA5"
+        data-position="Right"
+        data-x_margin="18"
+        data-y_margin="18">
+    </script>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <p>&copy; SINE, All Rights Reserved.</p>
+
+            <a
+                href="https://github.com/KeeganIsCool0/PRISMHybridVision"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link">
+
+                <img
+                    src="assets/githublogo.png"
+                    alt="GitHub Logo"
+                    class="github-logo">
+
+            </a>
+
         </div>
+
     </footer>
 
 </body>
 </html>
+```
