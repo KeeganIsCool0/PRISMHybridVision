@@ -64,18 +64,18 @@ PRISM Hybrid Vision is a digital-analog recording console that combines digital 
 
 ## General Specifications
 
-* 48 Input channels
-- 48 Mic preamps
-* 48 Line Inputs
-- 16 Stereo Returns
-* 16 AUX Sends
-- 8 Sub-Groups
-* Stereo + Monitor Outputs
-- 44.1-192 kHz Sample Rates
-* Bit Depth: 24-Bit
-- MADI Digital Routing Interface
-* Full Recall
-- 100 mm motorized faders per channel
+|Specification                     |Target               |
+|----------------------------------|---------------------|
+|Input Channels                    |48 (Expandable)      |
+|Mic Preamps                       |48                   |
+|Line Inputs                       |48                   |
+|Stereo Returns                    |16                   |
+|AUX Sends                         |16                   |
+|Sub Groups                        |8                    |
+|Outputs                           |Stereo + Monitor     |
+|Sample Rates                      |44.1-192 kHz         |
+|Bit Depth                         |48 Bit (Max) - 24 Bit|
+|Digital Interface                 |Optical + USB        |
 
 ## Sponsorship Inquiries
 
