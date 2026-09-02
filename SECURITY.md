@@ -7,7 +7,7 @@ The latest version of this repo is being supported with security updates.
 | Version        | Updates      |
 |----------------|--------------|
 | Latest         | ✅           |
-| v1.2           | ✅           |
+| v1.2           | :x:          |
 | v1.1           | :x:          |
 | v1.0           | :x:          |
 
