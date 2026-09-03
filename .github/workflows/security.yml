@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-          cache: 'pip' # Automatically caches bandit downloads
+          # Option B: Removed cache line to prevent looking for missing requirement/toml files
 
       - name: Install Bandit
         run: pip install bandit
