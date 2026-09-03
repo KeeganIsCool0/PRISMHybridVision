@@ -3,5 +3,15 @@ name = "prism-hybrid-vision"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "prism-hybrid-vision"
+path = "src/main.rs"
+
+[[bin]]
+name = "prism-calculator"
+path = "src/calculator.rs"
+
 [dependencies]
 cmake = "0.1"
+eframe = "0.28"
+egui = "0.28"

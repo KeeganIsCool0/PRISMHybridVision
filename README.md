@@ -125,7 +125,11 @@ cargo run
 Run it directly with the build executable:
 
 ```sh
+#Run the Panner
 ./target/debug/prism-hybrid-vision
+
+#Run the calculator app
+./target/debug/prism-calculator
 ```
 Build with Shell:
 
