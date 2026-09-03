@@ -142,6 +142,14 @@ Build with Shell:
 # Show help
 ./build_and_run.sh --help
 ```
+Build with Docker/Podman:
+
+```sh
+podman build -t prism-hybrid-vision .
+
+# Run the container
+podman run --rm -it localhost/prism-hybrid-vision:latest
+```
 
 The source is currently a 440 Hz reference tone. Replace the tone generator in `PipeWireOutput.cpp` with decoded input audio (or add an input stream) for program material.
 

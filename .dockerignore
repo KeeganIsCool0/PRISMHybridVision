@@ -1,0 +1,46 @@
+# Docker ignore file for PRISM Hybrid Vision
+
+# Build artifacts
+Firmware/build/
+target/
+**/target/
+**/Firmware/build/
+
+# Cargo lock file (optional, but we can keep it for reproducibility)
+# Cargo.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Documentation and assets (if not needed in the image)
+docs/
+Assets/
+BOM/
+Engineering_Docs/
+Hardware/
+TeX_Files/
+*.pdf
+*.md
+!README.md
+!LICENSE
+!SECURITY.md
+!CONTRIBUTING.md
+!CODE_OF_CONDUCT.md
+
+# Temporary and backup files
+*.tmp
+*.bak
+*.backup
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+
+# Runtime data
+imgui.ini

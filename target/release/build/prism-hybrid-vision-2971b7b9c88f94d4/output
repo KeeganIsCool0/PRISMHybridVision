@@ -1,0 +1,40 @@
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Using X11 for window creation
+-- Configuring done (2.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/kvitale/Documents/PRISMHybridVision/Firmware/build
+[ 13%] Built target glfw
+[ 18%] Built target imgui
+[ 19%] Built target glad-generate-files
+[ 21%] Built target glad
+[ 24%] Built target atmos-panner
+[ 26%] Built target boing
+[ 28%] Built target gears
+[ 30%] Built target heightmap
+[ 33%] Built target offscreen
+[ 37%] Built target particles
+[ 39%] Built target sharing
+[ 41%] Built target simple
+[ 44%] Built target splitview
+[ 47%] Built target wave
+[ 50%] Built target clipboard
+[ 53%] Built target events
+[ 56%] Built target msaa
+[ 60%] Built target glfwinfo
+[ 63%] Built target iconify
+[ 66%] Built target monitors
+[ 68%] Built target reopen
+[ 71%] Built target cursor
+[ 74%] Built target empty
+[ 76%] Built target gamma
+[ 78%] Built target icon
+[ 81%] Built target inputlag
+[ 83%] Built target joysticks
+[ 85%] Built target opacity
+[ 87%] Built target tearing
+[ 90%] Built target threads
+[ 92%] Built target timeout
+[ 94%] Built target title
+[ 97%] Built target triangle-vulkan
+[100%] Built target windows
+cargo:rustc-env=ATMOS_PANNER_EXE=Firmware/build/atmos-panner
