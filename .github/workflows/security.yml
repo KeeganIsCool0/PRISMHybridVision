@@ -6,46 +6,90 @@ on:
   pull_request:
     branches: [ "main", "master" ]
   schedule:
-    - cron: '0 0 * * 1' # Runs every Monday at midnight
+    - cron: '0 0 * * 1'
 
 jobs:
-  security-scan:
-    name: Run Security Audits
+  # ----------------------------------------------------
+  # 1. PYTHON SECURITY (Parallel)
+  # ----------------------------------------------------
+  python-scan:
+    name: Scan Python
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out code
         uses: actions/checkout@v4
 
-      # 1. PYTHON SECURITY (Bandit)
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+          cache: 'pip' # Automatically caches bandit downloads
+
       - name: Install Bandit
         run: pip install bandit
+
       - name: Scan Python Code
         run: bandit -r . -x ./node_modules -ll
 
-      # 2. RUST SECURITY (cargo-audit)
-      - name: Install Rust toolchain
-        uses: dtolnay/rust-toolchain@stable
-      - name: Install cargo-audit
-        run: cargo install cargo-audit
-      - name: Scan Rust Dependencies
-        # Only runs if a Cargo.lock file exists to prevent breaking builds
+  # ----------------------------------------------------
+  # 2. RUST SECURITY (Parallel & Cached Binary)
+  # ----------------------------------------------------
+  rust-scan:
+    name: Scan Rust
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      # Quick exit if Rust isn't even used in this commit
+      - name: Check for Cargo.lock
+        id: check_lock
         run: |
           if [ -f Cargo.lock ]; then
-            cargo audit
+            echo "exists=true" >> $GITHUB_OUTPUT
           else
-            echo "No Cargo.lock found, skipping Rust audit."
+            echo "exists=false" >> $GITHUB_OUTPUT
           fi
 
-      # 3. TYPESCRIPT/JS SECURITY (npm audit)
+      # Cache the compiled cargo-audit binary so we never compile it again
+      - name: Cache cargo-audit binary
+        if: steps.check_lock.outputs.exists == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/.cargo/bin/cargo-audit
+          key: ${{ runner.os }}-cargo-audit-v1
+
+      - name: Install Rust toolchain
+        if: steps.check_lock.outputs.exists == 'true'
+        uses: dtolnay/rust-toolchain@stable
+
+      # Only installs if it wasn't restored from the cache above
+      - name: Install cargo-audit (if not cached)
+        if: steps.check_lock.outputs.exists == 'true'
+        run: |
+          if ! command -v cargo-audit &> /dev/null; then
+            cargo install cargo-audit
+          fi
+
+      - name: Scan Rust Dependencies
+        if: steps.check_lock.outputs.exists == 'true'
+        run: cargo audit
+
+  # ----------------------------------------------------
+  # 3. NODE SECURITY (Parallel)
+  # ----------------------------------------------------
+  node-scan:
+    name: Scan Node
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 'node'
+
       - name: Scan Node Dependencies
         run: |
           if [ -f package.json ]; then
@@ -54,13 +98,21 @@ jobs:
             echo "No package.json found, skipping npm audit."
           fi
 
-      # 4. MULTI-LANGUAGE & IAC SECURITY (Trivy)
-      # Excellent for catching vulnerabilities in C/C++ build systems, Python requirements, and TS lockfiles
+  # ----------------------------------------------------
+  # 4. MULTI-LANGUAGE SECURITY (Parallel)
+  # ----------------------------------------------------
+  trivy-scan:
+    name: Run Trivy Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
       - name: Run Trivy File System Scan
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'fs'
           ignore-unfixed: true
           format: 'table'
-          exit-code: '1' # Fails the workflow if CRITICAL or HIGH vulnerabilities are found
+          exit-code: '1'
           severity: 'CRITICAL,HIGH'
