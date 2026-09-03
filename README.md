@@ -127,6 +127,21 @@ Run it directly with the build executable:
 ```sh
 ./target/debug/prism-hybrid-vision
 ```
+Build with Shell:
+
+```sh
+# Build both Rust and C++ components, then run the application
+./build_and_run.sh --run
+
+# Build only C++ components
+./build_and_run.sh --cpp-only
+
+# Build only Rust components
+./build_and_run.sh --rust-only
+
+# Show help
+./build_and_run.sh --help
+```
 
 The source is currently a 440 Hz reference tone. Replace the tone generator in `PipeWireOutput.cpp` with decoded input audio (or add an input stream) for program material.
 
