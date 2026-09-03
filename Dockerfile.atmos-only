@@ -1,0 +1,37 @@
+FROM ubuntu:22.04
+
+# Avoid interactive prompts during package installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install build dependencies and runtime libraries needed for atmos-panner
+RUN apt-get update && apt-get install -y \
+    curl \
+    make \
+    g++ \
+    cmake \
+    git \
+    libpipewire-0.3-dev \
+    libasound2-dev \
+    libjack-jackd2-dev \
+    libgl1-mesa-dev \
+    libx11-dev \
+    libxcursor-dev \
+    libxrandr-dev \
+    libxinerama-dev \
+    libxi-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create app directory
+WORKDIR /app
+
+# Copy the source code
+COPY Firmware/ .
+
+# Build the atmos-panner executable
+RUN mkdir -p build && \
+    cd build && \
+    cmake .. -DBUILD_TESTING=OFF && \
+    make
+
+# Run the binary
+ENTRYPOINT ["./build/atmos-panner"]

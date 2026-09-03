@@ -16,8 +16,3 @@ CMake Deprecation Warning at build/_deps/glad-src/CMakeLists.txt:1 (cmake_minimu
   to work with policies introduced by <max> or earlier.
 
 
-[09/02/2026 14:51:43][INFO	][glad   	]: downloading latest 'gl' specification
-[09/02/2026 14:51:43][INFO	][glad.opener	]: opening: 'https://raw.githubusercontent.com/KhronosGroup/OpenGL-Registry/master/xml/gl.xml'
-[09/02/2026 14:51:43][INFO	][glad   	]: generating 'gl' bindings
-[09/02/2026 14:51:43][INFO	][glad.opener	]: saving: 'https://raw.githubusercontent.com/KhronosGroup/EGL-Registry/master/api/KHR/khrplatform.h' to '/home/kvitale/Documents/PRISMHybridVision/Firmware/build/_deps/glad-build/include/KHR/khrplatform.h'
-[09/02/2026 14:51:44][INFO	][glad   	]: generating 'gl' bindings - done
