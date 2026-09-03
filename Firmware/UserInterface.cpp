@@ -8,6 +8,8 @@
 #include <cmath>
 #include <iostream>
 #include <algorithm>
+#include <vector>
+#include <string>
 
 namespace spatial {
 
@@ -16,12 +18,18 @@ UserInterface::UserInterface(AudioEngine& engine)
       azimuthDegrees_(0.0f),
       elevationDegrees_(0.0f),
       distance_(1.0f), // meters
-      spreadDegrees_(42.0f)
+      spreadDegrees_(42.0f),
+      currentTab_(0) // Start with Atmos Panner tab
 {
     // Initialize room correction arrays to zero/false
     lowShelfDb_.fill(0.0f);
     highShelfDb_.fill(0.0f);
     bypass_.fill(false);
+
+    // Initialize input/output selection state
+    selectedInputNode_ = -1;
+    selectedOutputNode_ = -1;
+    refreshNodeLists();
 }
 
 bool UserInterface::update(ImGuiIO& io, GLFWwindow* window) {
@@ -85,8 +93,8 @@ bool UserInterface::update(ImGuiIO& io, GLFWwindow* window) {
     // Render 3D sphere (using legacy OpenGL for simplicity)
     render3D();
 
-    // Render ImGui controls overlay
-    renderControls();
+    // Render ImGui tabs interface
+    renderTabs();
 
     // Render ImGui
     ImGui::Render();
@@ -206,7 +214,28 @@ void UserInterface::render3D() {
     glPopMatrix();
 }
 
-void UserInterface::renderControls() {
+void UserInterface::renderTabs() {
+    // Create tab bar
+    if (ImGui::BeginTabBar("##Tabs", ImGuiTabBarFlags_None)) {
+        // Atmos Panner Tab
+        if (ImGui::BeginTabItem("Atmos Panner")) {
+            currentTab_ = 0;
+            renderAtmosPannerTab();
+            ImGui::EndTabItem();
+        }
+
+        // Input/Output Select Tab
+        if (ImGui::BeginTabItem("I/O Selection")) {
+            currentTab_ = 1;
+            renderIoSelectionTab();
+            ImGui::EndTabItem();
+        }
+
+        ImGui::EndTabBar();
+    }
+}
+
+void UserInterface::renderAtmosPannerTab() {
     // ImGui window for controls
     ImGui::Begin("Spatial Controls", nullptr, ImGuiWindowFlags_AlwaysAutoResize);
 
@@ -258,6 +287,135 @@ void UserInterface::renderControls() {
     }
 
     ImGui::End();
+}
+
+void UserInterface::renderIoSelectionTab() {
+    ImGui::Begin("Input/Output Selection", nullptr, ImGuiWindowFlags_AlwaysAutoResize);
+
+    // Refresh button
+    if (ImGui::Button("Refresh Device List")) {
+        refreshNodeLists();
+    }
+    ImGui::SameLine();
+    if (ImGui::Button("Apply Selection")) {
+        applyIoSelection();
+    }
+
+    ImGui::Separator();
+
+    // Input Selection
+    ImGui::Text("Input Selection");
+    if (inputNodes_.empty()) {
+        ImGui::TextColored(ImVec4(1.0f, 0.5f, 0.0f, 1.0f), "No input nodes found. Click 'Refresh Device List'.");
+    } else {
+        ImGui::Text("Available Input Nodes:");
+        for (size_t i = 0; i < inputNodes_.size(); ++i) {
+            const NodeInfo& node = inputNodes_[i];
+            ImGui::PushID(static_cast<int>(i));
+
+            bool isSelected = (selectedInputNode_ == static_cast<int>(i));
+            if (ImGui::Selectable(node.name.c_str(), isSelected)) {
+                selectedInputNode_ = static_cast<int>(i);
+            }
+
+            if (isSelected) {
+                ImGui::SetItemDefaultFocus();
+            }
+
+            ImGui::SameLine();
+            ImGui::TextColored(ImVec4(0.7f, 0.7f, 0.7f, 1.0f), "(ID: %d)", node.id);
+            ImGui::PopID();
+        }
+
+        if (selectedInputNode_ >= 0 && selectedInputNode_ < static_cast<int>(inputNodes_.size())) {
+            ImGui::Text("Selected: %s", inputNodes_[selectedInputNode_].name.c_str());
+        }
+    }
+
+    ImGui::Separator();
+
+    // Output Selection
+    ImGui::Text("Output Selection");
+    if (outputNodes_.empty()) {
+        ImGui::TextColored(ImVec4(1.0f, 0.5f, 0.0f, 1.0f), "No output nodes found. Click 'Refresh Device List'.");
+    } else {
+        ImGui::Text("Available Output Nodes:");
+        for (size_t i = 0; i < outputNodes_.size(); ++i) {
+            const NodeInfo& node = outputNodes_[i];
+            ImGui::PushID(static_cast<int>(i));
+
+            bool isSelected = (selectedOutputNode_ == static_cast<int>(i));
+            if (ImGui::Selectable(node.name.c_str(), isSelected)) {
+                selectedOutputNode_ = static_cast<int>(i);
+            }
+
+            if (isSelected) {
+                ImGui::SetItemDefaultFocus();
+            }
+
+            ImGui::SameLine();
+            ImGui::TextColored(ImVec4(0.7f, 0.7f, 0.7f, 1.0f), "(ID: %d)", node.id);
+            ImGui::PopID();
+        }
+
+        if (selectedOutputNode_ >= 0 && selectedOutputNode_ < static_cast<int>(outputNodes_.size())) {
+            ImGui::Text("Selected: %s", outputNodes_[selectedOutputNode_].name.c_str());
+        }
+    }
+
+    ImGui::Separator();
+
+    // Current status
+    ImGui::Text("Status:");
+    ImGui::TextColored(ImVec4(0.0f, 1.0f, 0.0f, 1.0f), "PipeWire stream running: 48 kHz, %d channels", kOutputChannels);
+
+    ImGui::End();
+}
+
+void UserInterface::refreshNodeLists() {
+    // Clear existing lists
+    inputNodes_.clear();
+    outputNodes_.clear();
+    selectedInputNode_ = -1;
+    selectedOutputNode_ = -1;
+
+    // TODO: Implement actual PipeWire node enumeration
+    // For now, we'll add some placeholder nodes to demonstrate the UI
+    // In a real implementation, we would use PipeWire's API to enumerate nodes
+
+    // Placeholder input nodes
+    inputNodes_.push_back(NodeInfo{0, "Default Input (Microphone)"});
+    inputNodes_.push_back(NodeInfo{1, "USB Audio Device"});
+    inputNodes_.push_back(NodeInfo{2, "HDMI Audio Input"});
+    inputNodes_.push_back(NodeInfo{3, "Bluetooth Audio Input"});
+
+    // Placeholder output nodes
+    outputNodes_.push_back(NodeInfo{0, "Default Output (Speakers)"});
+    outputNodes_.push_back(NodeInfo{1, "USB Audio Device"});
+    outputNodes_.push_back(NodeInfo{2, "HDMI Audio Output"});
+    outputNodes_.push_back(NodeInfo{3, "Bluetooth Audio Output"});
+    outputNodes_.push_back(NodeInfo{4, "Headphones"});
+
+    // Select first items by default
+    if (!inputNodes_.empty()) selectedInputNode_ = 0;
+    if (!outputNodes_.empty()) selectedOutputNode_ = 0;
+}
+
+void UserInterface::applyIoSelection() {
+    // TODO: Implement actual PipeWire stream reconfiguration
+    // This would involve:
+    // 1. Stopping the current stream
+    // 2. Reconfiguring it to use the selected input/output nodes
+    // 3. Starting the stream again
+
+    // For now, just show a confirmation
+    if (selectedInputNode_ >= 0 && selectedInputNode_ < static_cast<int>(inputNodes_.size()) &&
+        selectedOutputNode_ >= 0 && selectedOutputNode_ < static_cast<int>(outputNodes_.size())) {
+        std::cout << "Would apply IO selection: "
+                  << "Input: " << inputNodes_[selectedInputNode_].name << " (ID: " << inputNodes_[selectedInputNode_].id << "), "
+                  << "Output: " << outputNodes_[selectedOutputNode_].name << " (ID: " << outputNodes_[selectedOutputNode_].id << ")"
+                  << std::endl;
+    }
 }
 
 } // namespace spatial
