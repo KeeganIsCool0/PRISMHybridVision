@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=PRISM Calculator
+Comment=Audio Engineering Calculator
+Exec=prism-calculator
+Categories=AudioVideo;Audio;
+Terminal=false

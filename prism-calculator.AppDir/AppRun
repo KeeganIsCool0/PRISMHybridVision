@@ -1,0 +1,8 @@
+#!/bin/bash
+SELF=$(readlink -f "$0")
+HERE=${SELF%/AppRun}
+export APPDIR="$HERE"
+export PATH="$HERE/usr/bin:$PATH"
+export LD_LIBRARY_PATH="$HERE/usr/lib:$HERE/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
+export FONTCONFIG_PATH="$HERE/etc/fonts/config.d"
+exec "$HERE/usr/bin/prism-calculator" "$@"

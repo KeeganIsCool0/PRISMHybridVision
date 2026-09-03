@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=PRISM Atmos Panner
+Comment=9.2.6 Spatial Audio Panner
+Exec=atmos-panner
+Icon=audio-x-generic
+Categories=AudioVideo;Audio;
+Terminal=false

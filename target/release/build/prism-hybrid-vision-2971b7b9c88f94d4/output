@@ -1,7 +1,7 @@
 -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
 -- Using X11 for window creation
--- Configuring done (2.1s)
--- Generating done (0.1s)
+-- Configuring done (5.8s)
+-- Generating done (0.7s)
 -- Build files have been written to: /home/kvitale/Documents/PRISMHybridVision/Firmware/build
 [ 13%] Built target glfw
 [ 18%] Built target imgui
