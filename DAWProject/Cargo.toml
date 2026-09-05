@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "plugin_vst3",
+    "gui_vizia",
+    "common_protocol",
+    "desktop_app"
+, "daw_controller"]
+resolver = "2"

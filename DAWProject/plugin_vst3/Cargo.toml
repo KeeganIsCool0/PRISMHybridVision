@@ -1,0 +1,16 @@
+[package]
+name = "plugin_vst3"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "plugin_vst3"
+crate-type = ["cdylib"]
+
+[dependencies]
+vst3 = "0.3"
+vizia = "0.4"
+cpal = "0.15"
+ringbuf = "0.4"
+uuid = { version = "1.3", features = ["v4"] }
+once_cell = "1.19"

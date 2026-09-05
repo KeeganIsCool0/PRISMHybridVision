@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BundleVersion</key>
+	<string>1.0.0</string>
+	<key>Components</key>
+	<array>
+		<dict>
+			<key>AudioProcessorClass</key>
+			<string>6E332252-54224A00-AA69301A-F318797E</string>
+			<key>AudioProcessorID</key>
+			<string>6E332252-54224A00-AA69301A-F318797E</string>
+			<key>ControllerClass</key>
+			<string>1BA8A477-EE0A4A2D-80F50D14-13D2EAA1</string>
+			<key>ControllerID</key>
+			<string>1BA8A477-EE0A4A2D-80F50D14-13D2EAA1</string>
+			<key>Name</key>
+			<string>Audio Console Plugin</string>
+			<key>SubCategories</key>
+			<string>Audio Effect</string>
+			<key>Vendor</key>
+			<string>MyCo</string>
+			<key>VendorURL</key>
+			<string>https://myco.example.com</string>
+			<key>VendorEmail</key>
+			<string>info@myco.example.com</string>
+			<key>Version</key>
+			<string>1.0.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

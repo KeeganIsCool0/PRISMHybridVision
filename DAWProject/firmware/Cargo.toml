@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "bucket_8ch_nucleo",
+    "spatial_joystick"
+]

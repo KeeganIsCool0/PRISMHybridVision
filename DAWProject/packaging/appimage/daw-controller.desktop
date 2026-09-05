@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Audio Console
+Comment=CPAL audio console and DAW transport controller
+Exec=daw_controller
+Icon=daw-controller
+Categories=AudioVideo;Audio;Music;
+Terminal=false
+StartupNotify=true

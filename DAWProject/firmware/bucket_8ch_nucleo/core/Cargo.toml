@@ -1,0 +1,6 @@
+[package]
+name = "bucket_8ch_nucleo_core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
