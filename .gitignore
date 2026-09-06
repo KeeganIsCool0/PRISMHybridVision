@@ -25,3 +25,6 @@ Thumbs.db
 
 # Ignore coverage reports
 /cov*/
+
+# Ignore cmake build directories
+/build/ 
