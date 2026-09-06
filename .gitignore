@@ -27,4 +27,4 @@ Thumbs.db
 /cov*/
 
 # Ignore cmake build directories
-/build/ 
+/Firmware/build/ 
