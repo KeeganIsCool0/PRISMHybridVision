@@ -29,4 +29,4 @@ Thumbs.db
 # Ignore cmake build directories
 /Firmware/build/ 
 
-./TeX_Files
+TeX_Files/
