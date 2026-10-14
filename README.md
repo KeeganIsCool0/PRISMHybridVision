@@ -37,7 +37,7 @@ PRISM Hybrid Vision is a digital-analog recording console that combines digital 
 
 ## Overview
 
-<img width="1240" height="691" alt="image" src="https://github.com/user-attachments/assets/37b4c516-2eff-4e29-808a-87cdaa8106a7" />
+<img width="1583" height="873" alt="fullconsoleupdated" src="https://github.com/user-attachments/assets/3b5649b9-1e93-4f56-ad8e-8ef2774e5395" />
 
 ### Description
 
@@ -180,7 +180,7 @@ Go to https://github.com/KeeganIsCool0/PRISM_ChannelStrip to test the channel st
 
 ## Center Console
 
-<img width="1240" height="772" alt="image" src="https://github.com/user-attachments/assets/26712e4a-191a-48d1-bb43-06089ded5b41" />
+<img width="1598" height="970" alt="centerconsoleupdated" src="https://github.com/user-attachments/assets/76e51cd5-82c3-454d-812a-1fa97e40708f" />
 
 ## Designing Process
 
